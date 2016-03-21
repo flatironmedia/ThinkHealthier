@@ -1,0 +1,1 @@
+ALTER TABLE `#__yoorecipe` DROP INDEX `id`

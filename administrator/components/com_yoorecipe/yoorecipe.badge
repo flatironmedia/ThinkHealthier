@@ -1,0 +1,22 @@
+[
+    {
+        "title"         : "COM_YOORECIPE_EASYSOCIAL_BADGE_GRANDCHEF",
+		"alias"         : "grand-chef",
+        "description"   : "COM_YOORECIPE_EASYSOCIAL_BADGE_GRANDCHEF_DESC",
+        "howto"         : "COM_YOORECIPE_EASYSOCIAL_BADGE_GRANDCHEF_HOWTO",
+		"command"       : "recipes.create",
+		"extension"     : "com_yoorecipe",
+		"avatar"        : "media/com_yoorecipe/badges/grand-chef.png",
+		"frequency"     : 10
+    },
+    {
+        "title"         : "COM_YOORECIPE_EASYSOCIAL_BADGE_FOODLOVER",
+        "alias"         : "food-lover",
+        "description"   : "COM_YOORECIPE_EASYSOCIAL_BADGE_FOODLOVER_DESC",
+        "howto"         : "COM_YOORECIPE_EASYSOCIAL_BADGE_FOODLOVER_HOWTO",
+        "command"       : "reviews.create",
+        "extension"     : "com_yoorecipe",
+        "avatar"        : "media/com_yoorecipe/badges/food-lover.png",
+        "frequency"     : 10
+    }
+]

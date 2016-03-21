@@ -1,0 +1,54 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// ------------------------------------------------------
+// RTL STYLES
+// ------------------------------------------------------
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+// Form
+.btn-link:after {
+  content: "\f177";
+}
+
+
+// MODULES
+// ------------------------------------------------------
+
+// JA Content Slider
+html .jsslide:hover .ja_slide_mask {
+  @media (min-width: @screen-sm-min) {
+    -webkit-transform: translate(17%, -31%) rotate(45deg);
+       -moz-transform: translate(17%, -31%) rotate(45deg);
+         -o-transform: translate(17%, -31%) rotate(45deg);
+        -ms-transform: translate(17%, -31%) rotate(45deg);
+            transform: translate(17%, -31%) rotate(45deg);
+  }
+}
+
+// MEGAMENU
+// ------------------------------------------------------
+html .t3-megamenu .mega-align-center > .dropdown-menu {
+  -webkit-transform: translate(50%, 0px);
+     -moz-transform: translate(50%, 0px);
+      -ms-transform: translate(50%, 0px);
+       -o-transform: translate(50%, 0px);
+          transform: translate(50%, 0px);
+}
+
+.ie8 .navbar-nav .dropdown-submenu > a:after {
+  border-color: transparent @navbar-default-link-color transparent transparent!important;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.ie8 .navbar-nav .dropdown-submenu > a:hover:after,
+.ie8 .navbar-nav .dropdown-submenu.open > a:after {
+  border-color: transparent @brand-primary transparent transparent !important;
+}

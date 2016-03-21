@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_SUBCHANNEL_FORM_LBL_LIST_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_CREATED_BY"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_CREATED_BY"  /> 
+
+ 
+		<field name="category_id" type="sql" label="Category Id" description="" query="SELECT id,title FROM `#__categories`" key_field="id" value_field="title"  required="true" onchange="Joomla.submitbutton('list.apply')" /> 
+
+       <field name="id0" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID0"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID0" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2070849"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id1" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID1"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID1" 
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id2" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID2"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID2" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id3" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID3"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID3" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id4" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID4"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID4" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id5" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID5"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID5" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id6" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID6"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID6" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id7" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID7"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID7" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id8" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID8"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID8" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id9" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID9"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID9" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id10" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID10"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID10" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id11" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID11"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID11" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id12" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID12"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID12" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id13" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID13"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID13" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id14" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID14"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID14" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id15" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID15"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID15" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id16" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID16"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID16" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id17" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID17"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID17" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id18" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID18"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID18" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="id19" type="list"
+                
+            label="COM_SUBCHANNEL_FORM_LBL_LIST_ID19"
+            description="COM_SUBCHANNEL_FORM_DESC_LIST_ID19" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,40 @@
+.jai-map-container {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+}
+.jai-map-container img {
+  max-width: 100%;
+}
+.jai-map-description {
+  width: 50%;
+  margin: -48px auto 72px;
+}
+.jai-map-container .ja-marker-default {
+  background-image: url("../../../images/icon-marker-default.png");
+  background-repeat: no-repeat;
+}
+.cd-dropdown > span,
+.cd-dropdown.cd-active > span {
+  background: #ffffff;
+  padding: 5px 30px 5px 0;
+  line-height: 26px;
+}
+.cd-dropdown ul {
+  text-align: left;
+}
+.jai-map-container .popover .x-close {
+  overflow: hidden;
+}
+.jai-map-wrap .top-right {
+  margin-bottom: 24px;
+}
+.jai-map-wrap .top-right .cd-dropdown {
+  float: right;
+}
+.jai-map-wrap .top-left {
+  margin-bottom: 24px;
+}
+.jai-map-wrap .top-left .cd-dropdown {
+  float: left;
+}

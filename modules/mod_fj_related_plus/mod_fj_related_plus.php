@@ -1,0 +1,48 @@
+<?php
+/**
+* @package		mod_fj_related_plus
+* @copyright	Copyright (C) 2008 - 2014 Mark Dexter. All rights reserved.
+* @license		http://www.gnu.org/licenses/gpl.html
+*/
+
+// no direct access
+defined('_JEXEC') or die;
+
+// Include the syndicate functions only once
+require_once (dirname(__FILE__) . '/helper.php');
+
+$list = modFJRelatedPlusHelper::getList($params); // get return results from the helper
+$articleView = modFJRelatedPlusHelper::isArticle(); // is this an article?
+$subtitle = '';
+
+
+if (!count($list)) {  // no articles to list. check whether we want to show some text
+	//return;
+	if ($articleView != 'true' && ($params->get('notArticleText','')))
+	{
+		$subtitle = $params->get('notArticleText','');
+	}
+	else if ($params->get('noRelatedText','') && $articleView == 'true')
+	{
+		$subtitle = $params->get('noRelatedText','');
+	}
+	else
+	{
+		return;
+	}
+}
+
+// choose layout based on ordering parameter
+if ($params->get('ordering') == 'tag_article' && count($list))
+{
+	// We need to hard-code the layout when sorting by tag_article
+	$path = JModuleHelper::getLayoutPath('mod_fj_related_plus', 'tag_order');
+}
+else
+{
+	$path = JModuleHelper::getLayoutPath('mod_fj_related_plus', $params->get('layout', 'default'));
+}
+
+if (file_exists($path)) {
+	require($path);
+}

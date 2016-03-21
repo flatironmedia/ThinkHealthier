@@ -1,0 +1,637 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// -------------------------------------------------------
+//  DEFAULT BOOTSTRAP NAVBAR (navbars.less)
+// -------------------------------------------------------
+
+// Base Navbars
+// --------------------------------------------------
+.navbar {
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar heading
+// --------------
+.navbar-header {
+  margin-left: @t3-global-margin/2;
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar collapse (body)
+// ----------------------
+.navbar-collapse {
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Brand/project name
+// ------------------
+.navbar-brand {
+  // Link states
+  &:hover,
+  &:focus {
+  }
+  @media (min-width: @grid-float-breakpoint) {
+  }
+}
+
+
+// Navbar toggle
+// -------------
+.navbar-toggle {
+  border: 2px solid @brand-primary;
+  color: @brand-primary;
+  font-size: 14px;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  margin: 15px 0 0 0;
+
+  // Bars
+  .fa-bars {
+  }
+
+  &:hover, &:active, &:focus {
+    background: @tpl-off-canvas-toggle-border;
+    border-color: @tpl-off-canvas-toggle-border;
+    color: @white;
+  }
+
+  // Hide on breakpoint
+  @media (min-width: @grid-float-breakpoint) {
+    display: none;
+  }
+}
+
+
+// Navbar nav links
+// ----------------
+.navbar-nav {
+  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+
+  > li > a {
+  }
+
+  // T3 Note: Dropdown Menu styles when collapsed
+  // Dropdowns get custom display when collapsed
+  @media (max-width: @screen-xs-max) {
+    .open .dropdown-menu {
+      > li > a,
+      .dropdown-header {
+      }
+      > li > a {
+        // Link states
+        &:hover,
+        &:focus {
+        }
+      }
+    }
+  }
+
+  // T3 Note: Main Styles for breakpoint
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    margin: 0;
+    > li {
+      > a {
+      }
+    }
+  }
+
+  // End
+}
+
+
+// Navbar form
+// ------------
+.navbar-form {
+}
+
+
+// Dropdown in navbars
+// -------------------
+// Menu position and menu carets
+.navbar-nav > li > .dropdown-menu,
+.navbar-nav > li.open > .dropdown-menu {
+  background: @tpl-mega-dropdown-menu-background;
+  border-radius: 0;
+  font-size: 13px;
+  min-width: 220px;
+  padding: 20px;
+  border: 0;
+
+  > li > a {
+    color: @text-color;
+  }
+
+  > li.open > a,
+  > li.active > a {
+    color: @brand-primary;
+  }
+}
+
+
+// Buttons in navbars
+// ------------------
+.navbar-btn {
+}
+
+
+// Text in navbars
+// ---------------
+.navbar-text {
+}
+
+
+
+// Default Navbars (Visual Style only)
+// --------------------------------------------------
+.navbar-default {
+  background-color: @navbar-default-bg;
+  border-color: @navbar-default-border;
+  font-size: @t3-font-size-smaller;
+
+  .navbar-brand {
+    color: @navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-brand-hover-color;
+      background-color: @navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-default-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
+      }
+    }
+
+    > li > .nav-header {
+      color: @navbar-default-link-color;
+      display: inline-block;
+      padding-top: @t3-global-padding * 0.75;
+      padding-bottom: @t3-global-padding * 0.75;
+    }
+
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-active-color;
+        background-color: @navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-default-border;
+  }
+
+  // Dropdown menu items and carets
+  .navbar-nav {
+    // Caret should match text color on hover
+    > .dropdown > a:hover .caret,
+    > .dropdown > a:focus .caret {
+      border-top-color: @navbar-default-link-hover-color;
+      border-bottom-color: @navbar-default-link-hover-color;
+    }
+
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-default-link-active-bg;
+        color: @navbar-default-link-active-color;
+        .caret {
+          border-top-color: @navbar-default-link-active-color;
+          border-bottom-color: @navbar-default-link-active-color;
+        }
+      }
+    }
+    > .dropdown > a .caret {
+      border-top-color: @navbar-default-link-color;
+      border-bottom-color: @navbar-default-link-color;
+    }
+
+
+    @media (max-width: @screen-xs-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-hover-color;
+            background-color: @navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-disabled-color;
+            background-color: @navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+  .navbar-link {
+    color: @navbar-default-link-color;
+    &:hover {
+      color: @navbar-default-link-hover-color;
+    }
+  }
+
+}
+
+
+
+// -------------------------------------------------------
+//  T3 MAIN MENU
+// -------------------------------------------------------
+&.has-navbar-header {
+  @media (max-width: @screen-md-max) {
+    .container {
+      position: relative;
+    }
+
+    #t3-mainnav {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      top: 71px;
+      z-index: 9999;
+
+      .t3-nav-btn {
+        position: absolute;
+        right: @breakpoint-grid-gutter-width/2;
+        top: -71px;
+      }
+    }
+
+    .t3-mainnav {
+      float: none;
+      width: 100%;
+
+      .t3-navbar-collapse {
+        background: @tpl-mega-dropdown-menu-background;
+        margin: 0 -(@breakpoint-grid-gutter-width/2);
+        max-height: 400px;
+
+        .navbar-nav {
+          margin: 0 -(@breakpoint-grid-gutter-width/2);
+        }
+      }
+    }
+  }
+}
+
+#t3-mainnav {
+
+}
+
+.t3-mainnav {
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 0;
+  float: right;
+
+
+  // Navbar
+  // -------
+  .t3-navbar {
+    padding-left: 0;
+    padding-right: 0;
+
+    .navbar-nav {
+      float: right;
+      text-transform: uppercase;
+      
+      > li {
+        margin: 0 15px;
+      }
+
+      > li > a {
+        border-bottom: 2px solid transparent;
+        padding: 23px 5px 21px;
+
+        &:hover,
+        &:focus {
+          border-color: @brand-primary;
+          color: @navbar-default-link-hover-color;
+        }
+      }
+
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          background: none;
+          border-color: @brand-primary;
+        }
+      }
+
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          color: @navbar-default-link-disabled-color;
+          background: none;
+        }
+      }
+
+      > .open > a {
+        &,
+        &:hover,
+        &:focus {
+          border-color: @brand-primary;
+          .caret {
+            border-top-color: @navbar-default-link-active-color;
+            border-bottom-color: @navbar-default-link-active-color;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Collapse Navbar
+  // ---------------
+  .t3-navbar-collapse {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    // Hide the generated navbar on breakpoint
+    @media (min-width: @grid-float-breakpoint) {
+      display: none !important;
+    }
+
+    // Navbar nav links
+    // ----------------
+    .navbar-nav {
+      margin: 0 -@navbar-padding-horizontal;
+      text-transform: uppercase;
+
+      //font awesome
+      li > a .fa {
+        margin-right: 5px;
+      }
+
+      > li > a {
+        border: none;
+        padding: 8px 0;
+      }
+
+      > li:first-child  > a {
+        border-top: 0;
+      }
+
+      // Dropdown Menu
+      .open .dropdown-menu {
+        padding: 0;
+        font-size: 13px;
+
+        > li > a,
+        .dropdown-header {
+        }
+
+        > li > a {
+          color: @text-color;
+          padding: 3px 10px;
+          text-transform: none;
+          // Link states
+          &:hover,
+          &:focus {
+            color: @brand-primary;
+          }
+        }
+
+        > li.active > a {
+          color: @brand-primary;
+        }
+
+        > .dropdown-submenu > .dropdown-menu {
+            padding: 0 10px;
+        }
+
+        > li.mega-group {
+          > span {
+            color: @brand-primary-dark;
+            display: block;
+            font-weight: 600;
+            padding: 0 10px;
+            text-transform: uppercase;
+          }
+
+          &.open > a {
+            background: none;
+            color: @brand-primary;
+          }
+
+          > .dropdown-menu {
+
+            .dropdown-submenu {
+
+              > a:after {
+                border-left-color: @text-color;
+              }
+
+              &.open > a {
+                background: none;
+                color: @brand-primary;
+
+                &:after {
+                  border-left-color: @brand-primary;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+      // Re-Align the caret on right
+      .dropdown > a {
+        .caret {
+          position: absolute;
+          top: 40%;
+          right: @padding-base-horizontal;
+        }
+      }
+    }
+
+  // End Collapse Navbar
+  }
+
+// End
+}
+
+
+// NONE RESPONSIVE
+// ---------------------------
+.none-responsive {
+	.has-navbar-header {
+		#t3-mainnav {
+			position: static;
+			width: 83.333%;
+			top: 0;
+			
+			.t3-nav-btn {
+				position: static;
+				top: 0;
+			}
+			
+			.t3-navbar-collapse {
+				margin: 0;
+				background: none;
+				padding: 0;
+			}
+		}
+		
+		.t3-mainnav {
+			float: right;
+			width: auto;
+		}
+	}
+	
+	.navbar-nav > li > .dropdown-menu, 
+	.navbar-nav > li.open > .dropdown-menu {
+		padding: 20px 0;
+	}
+}
+
+
+// MAIN NAV FORM 
+#t3-mainnav-form {
+  background: @white;
+  overflow: hidden;
+
+  .navbar-nav {
+    //Control screen tablet
+    @media screen and (max-width: @screen-xs-max) {
+      margin: 0;
+    }
+  }
+  
+  li {
+
+    //Icon backtohome
+    &.back-home {
+      position: relative;
+
+      .fa-angle-left {
+        font-size: @font-size-h2;
+        left: @t3-global-margin / 2;
+        position: absolute;
+        top: 27%;
+
+        //Control screen tablet
+        @media screen and (max-width: @screen-xs-max) {
+          top: 15%;
+          left: @t3-global-margin / 4;
+        }
+      }
+
+      a {
+        background: @brand-primary;
+        color: @white;
+        padding-left: @t3-global-padding * 1.5;
+
+        &:hover {
+          background: darken(@brand-primary, 10%);
+          color: @white;        
+        }
+
+        //Control screen tablet
+        @media screen and (max-width: @screen-xs-max) {
+          padding-left: @t3-global-padding;
+          padding-right: @t3-global-padding / 2;
+        }
+      }
+    }
+
+    a {
+      color: @navbar-default-link-color;
+      font-size: @t3-font-size-smaller;
+      text-transform: uppercase;
+      padding: @t3-global-padding;
+
+      &:hover,&:focus,&:active {
+        background: transparent;
+        color: @navbar-default-link-hover-color;
+      }
+
+      //Control screen tablet
+      @media screen and (max-width: @screen-xs-max) {
+        padding: (@t3-global-padding / 2) (@t3-global-padding / 4);
+      }
+    }
+
+    //Active 
+    &.active {
+      a {
+        color: @navbar-default-link-active-color;
+        background: transparent;
+      }
+    }
+
+    //Control screen tablet
+    @media screen and (max-width: @screen-xs-max) {
+      display: inline-block;
+    }
+  }
+}

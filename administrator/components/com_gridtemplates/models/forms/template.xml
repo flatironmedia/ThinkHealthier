@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_CREATED_BY"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_CREATED_BY"  /> 
+
+ 
+		<field name="category" type="sql" label="Category" description="" query="SELECT id,title FROM `#__categories`" key_field="id" value_field="title"  required="true" /> 
+
+       <field name="type0" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE0"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE0" 
+                 default="1" 
+                
+                 required="true" 
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type1" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE1"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE1" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type2" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE2"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE2" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type3" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE3"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE3" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type4" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE4"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE4" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type5" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE5"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE5" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type6" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE6"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE6" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type7" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE7"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE7" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type8" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE8"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE8" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type9" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE9"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE9" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type10" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE10"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE10" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type11" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE11"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE11" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type12" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE12"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE12" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type13" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE13"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE13" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type14" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE14"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE14" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type15" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE15"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE15" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type16" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE16"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE16" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type17" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE17"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE17" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type18" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE18"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE18" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+       <field name="type19" type="list"
+                
+            label="COM_GRIDTEMPLATES_FORM_LBL_TEMPLATE_TYPE19"
+            description="COM_GRIDTEMPLATES_FORM_DESC_TEMPLATE_TYPE19" 
+                 default="1" 
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2082525"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="1">Single Column Article</option>
+                <option value="2">Double Column Article</option>
+                <!--<option value="3">Ad1 + Single Column Article</option>
+                <option value="4">Ad1 + Double Column Article</option>
+                <option value="5">Ad2 + Single Column Article</option>
+                <option value="6">Ad2 + Double Column Article</option>-->
+
+        </field> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

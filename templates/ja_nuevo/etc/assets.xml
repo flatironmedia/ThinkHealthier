@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+		<file>js/jquery.infinitescroll.min.js</file>
+		<file>js/jquery.isotope.min.js</file>
+		<file>js/masonry.pkgd.js</file>
+		<!-- <file>js/jquery.masonry.min.js</file> -->
+		<file>js/imagesloaded.pkgd.js</file>
+		<file>js/script.js</file>
+		<file>js/togglefooter.js</file>
+		<!-- <file>jquery-1.7.1.min.js</file> -->
+	</scripts>
+	
+	<stylesheets>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,600italic,400italic,300italic</file>
+		<file>http://fonts.googleapis.com/css?family=Montserrat:400,700</file>
+	</stylesheets>
+	
+</assets>

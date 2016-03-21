@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_ALTARTICLEDATA_FORM_LBL_DATA_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_CREATED_BY"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_CREATED_BY"  /> 
+
+       <field name="article_id" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_ARTICLE_ID"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_ARTICLE_ID" 
+                                                    
+                                                    readonly="true"
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="article_title" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_ARTICLE_TITLE"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_ARTICLE_TITLE" 
+                                                    
+                                                    readonly="true"
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="headline" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_HEADLINE"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_HEADLINE" 
+                                                    
+                                                    
+                                                    maxlength="100"
+                                                    filter="safehtml" /> 
+
+       <field name="intro" type="textarea" maxlength="2550" rows="10" 
+                
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_INTRO"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_INTRO" 
+                
+                
+                 /> 
+
+       <field name="custom1" type="hidden"
+                
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_CUSTOM1"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_CUSTOM1" 
+                
+                
+                
+            maxlength="255" /> 
+
+       <field name="custom2" type="hidden"
+                
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_CUSTOM2"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_CUSTOM2" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2159682"
+            heading="h4"
+            close="true"
+            maxlength="255"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="custom3" type="hidden"
+                
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_CUSTOM3"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_CUSTOM3" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="custom4" type="hidden"
+                
+            label="COM_ALTARTICLEDATA_FORM_LBL_DATA_CUSTOM4"
+            description="COM_ALTARTICLEDATA_FORM_DESC_DATA_CUSTOM4" 
+                
+                
+                
+            option_on="Yes"
+            option_off="Yes" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

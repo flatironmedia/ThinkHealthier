@@ -1,0 +1,217 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Nuevo Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+ 
+/**
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* BODY STYLE 
+------------------------------ */
+html {
+	height: 100%
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../images/bg_offline.jpg") no-repeat;
+	background-size: cover;
+	background-color: #F4F4F4;
+	color: #7b888f;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+}
+
+.offline-body {
+	padding-top: 150px;
+}
+
+
+/* FORM OFFLINE 
+-----------------------------*/
+#frame {
+	border: 2px solid #b8c5cc;
+	border-radius: 4px;
+	padding: 24px;
+	margin: auto;
+	text-align: center;
+	width: 500px;
+}
+
+/* Tittle */
+#offline-title h1 {
+	color: #73bfe6;
+	font-family: Montserrat;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+/* Image */
+#offline-img {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+#offline-img img {
+	max-width: 100%;
+}
+
+/* Description */
+.des-offline {
+	margin-bottom: 24px;
+
+}
+
+/* Form input */
+.form-offline {
+	overflow: hidden;
+	margin: 0 -12px 24px;
+}
+
+.form-group {
+	padding: 0 12px;
+	width: 50%;
+	float: left;
+}
+
+.control-label {
+	color: #7b888f;
+	display: block;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.control-input {
+	background: none;
+	border: 2px solid #b8c5cc;
+	padding-left: 10px;
+	height: 38px;
+	width: 100%;
+}
+
+.control-input:focus {
+	border-color: #73bfe6;
+}
+
+#form-login-remember {
+	display: inline-block;
+	float: left;
+	padding-top: 9px;
+}
+
+#remember {
+	margin: 0 2px 0 0;
+	position: relative;
+	top: 1px;
+}
+
+#submit-buton {
+	text-align: right;
+}
+#submit-buton input {
+	background: transparent;
+	border: 2px solid #73bfe6;
+	border-radius: 20px;
+	color: #73bfe6;
+	font-family: Montserrat;
+	padding: 8px 24px;
+}
+
+#submit-buton input:focus,
+#submit-buton input:hover,
+#submit-buton input:active {
+	border-color: #48abde;
+	color: #48abde;
+	cursor: pointer;
+}
+
+/* Message */
+.alert-warning {
+	border: 1px solid #ebccd1;
+	border-radius: 4px;
+	background: #f2dede;
+	color: #b94a48;
+	padding: 12px 24px;
+	margin: auto auto 24px;
+	width: 500px;
+}
+
+.error,.alert-heading {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+.error:before,
+.alert-heading:before {
+	content: "\f00d";
+	font-family: FontAwesome;
+	margin-right: 5px; 	
+}
+
+.error.message {
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 0;
+}
+
+.error.message ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.error.message:before {
+	display: none;
+}
+
+.close {
+	float: right;
+	cursor: pointer;
+}
+
+
+.alert p {
+	margin: 0;
+}
+
+/* Responesive with screen < 500px */
+@media screen and (max-width: 500px) {
+	#frame {
+		width: auto;
+	}
+
+	#system-message {
+		width: auto;
+	}
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 480px) {
+	.offline-body {
+		padding: 24px 12px;
+	}
+
+	.form-group {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.form-offline {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,59 @@
+/**
+* $JA#COPYRIGHT$
+*/
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+.jai-map-container {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+}
+
+.jai-map-container img {
+  max-width: 100%;
+}
+
+.jai-map-description {
+  width: 50%;
+  margin: -(@t3-global-margin*2) auto @t3-global-margin*3;
+}
+
+.jai-map-container .ja-marker-default {
+  background-image: url("@{t3-image-path}/icon-marker-default.png");
+  background-repeat: no-repeat;
+}
+
+.cd-dropdown > span,
+.cd-dropdown.cd-active > span {
+  background: @white;
+  padding: 5px 30px 5px 0;
+  line-height: 26px;
+}
+
+.cd-dropdown ul {
+  text-align: left;
+}
+
+.jai-map-container .popover .x-close {
+  overflow: hidden;
+}
+
+.jai-map-wrap {
+  .top-right {
+    margin-bottom: @t3-global-margin;
+    .cd-dropdown {
+      float: right;
+    }
+  }
+
+  .top-left {
+    margin-bottom: @t3-global-margin;
+    .cd-dropdown {
+      float: left;
+    }
+  }
+}

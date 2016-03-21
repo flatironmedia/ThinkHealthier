@@ -1,0 +1,1 @@
+delete from `#__yoorecipe_units` where code = '';

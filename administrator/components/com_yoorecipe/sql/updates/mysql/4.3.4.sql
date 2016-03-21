@@ -1,0 +1,1 @@
+ALTER TABLE `#__yoorecipe` ADD COLUMN `sugar` DOUBLE NULL DEFAULT NULL after `cost`;

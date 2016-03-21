@@ -1,0 +1,1 @@
+ALTER TABLE `#__yoorecipe` ADD COLUMN `serving_size` VARCHAR( 255 ) NULL  after `video`;

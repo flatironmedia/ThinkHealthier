@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Drop Menu Articles</name>
+    <author>Ace Udovicic | OGOSense</author>
+    <version>1.0.0</version>
+    <description>Module for displaying articles inside drop down menu.</description>
+    <files>
+        <filename>mod_dropmenuarticles.xml</filename>
+        <filename module="mod_dropmenuarticles">mod_dropmenuarticles.php</filename>
+ 
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+      
+    </files>
+
+
+    <config>
+
+
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="category" type="sql" label="Category" description="" query="SELECT path,title FROM `#__categories`" key_field="path" value_field="title"  required="true" /> 
+                <field name="article_count" type="list" default="1" label="Number of articles" description="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </field>
+            </fieldset>
+        </fields>
+
+
+    </config>
+
+
+</extension>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="2.5" client="site">
+	<name>Vintage (Style)</name>
+	<version>2.5.0</version>
+	<creationDate>2008-06-6</creationDate>
+	<author>JAWall! Project</author>
+	<authorEmail>admin@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Teen Life Style for JAWall template</description>
+	<files>
+	</files>
+	<metadata>
+		<name>Vintage (Style)</name>
+		<tag>sty-VIT</tag>
+		<rtl>0</rtl>
+		<locale>en_GB.utf8, en_GB.UTF-8, en_GB, eng_GB, en, english, english-uk, uk, gbr, britain, england, great britain, uk, united kingdom, united-kingdom</locale>
+		<firstDay>0</firstDay>
+	</metadata>
+	<params />
+</metafile>

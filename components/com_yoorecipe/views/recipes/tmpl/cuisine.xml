@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_CUISINE">
+		<message>COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_CUISINE_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_yoorecipe/models/fields"
+	>
+		<fieldset name="request">
+			<field name="id" type="sql"
+			query="SELECT distinct cuisine FROM #__yoorecipe where published = 1 and validated = 1" key_field="cuisine" value_field="cuisine"
+			label="COM_YOORECIPE_FIELD_CUISINE_LABEL" description="COM_YOORECIPE_FIELD_CUISINE_DESC"
+		/>
+		</fieldset>
+	</fields>
+</metadata>

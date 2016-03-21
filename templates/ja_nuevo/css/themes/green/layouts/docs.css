@@ -1,0 +1,132 @@
+.docs-section {
+  margin-bottom: 48px;
+}
+.docs-section .page-header {
+  border-bottom: 1px solid #e1e4e6;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.docs-section .page-header h1 {
+  font-size: 36px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .docs-section .page-header h1 {
+    font-size: 36px;
+  }
+}
+.docs-section h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .docs-section h2 {
+    font-size: 32px;
+  }
+}
+.docs-section .dropdown-menu {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  padding: 12px 0 0;
+}
+.docs-section .dropdown-menu li {
+  background: #2c3236;
+  padding: 0 12px;
+}
+.docs-section .dropdown-menu li:first-child {
+  padding-top: 12px;
+}
+.docs-section .dropdown-menu li:last-child {
+  padding-bottom: 12px;
+}
+.example-type h1,
+.example-type h2,
+.example-type h3,
+.example-type h4,
+.example-type h5,
+.example-type h6 {
+  margin: 24px 0;
+  font-weight: 100;
+}
+.example-colors .swatch-item {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  background: #363d42;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+@media (min-width: 1280px) {
+  .example-colors .swatch-item {
+    min-height: 123px;
+  }
+}
+.example-colors .swatch-item dl {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+}
+.example-colors .color-brand-primary {
+  background: #00b3b3;
+}
+.example-colors .color-brand-secondary {
+  background: #edb200;
+}
+.example-colors .color-brand-success {
+  background: #1abc9c;
+}
+.example-colors .color-brand-danger {
+  background: #d9534f;
+}
+.example-colors .color-brand-warning {
+  background: #e74c3c;
+}
+.example-colors .color-brand-info {
+  background: #5bc0de;
+}
+.example-colors .color-gray-darker {
+  background: #2c3236;
+}
+.example-colors .color-gray-dark {
+  background: #363d42;
+}
+.example-colors .color-gray {
+  background: #555555;
+}
+.example-colors .color-gray-light {
+  background: #999999;
+  color: #363d42;
+}
+.example-colors .color-gray-lighter {
+  background: #ecf0f1;
+  color: #363d42;
+}
+.example-colors .color-gray-lightest {
+  background: #f7f7f7;
+  color: #363d42;
+}
+.example-buttons .btn,
+.example-inputs .btn,
+.example-buttons .form-control,
+.example-inputs .form-control {
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.example-buttons ul,
+.example-inputs ul {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .example-buttons ul li,
+  .example-inputs ul li {
+    float: left;
+    width: 30%;
+    padding-right: 24px;
+  }
+}

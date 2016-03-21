@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+ 
+	<name>YooRecipe!</name>
+	<creationDate>June 2011</creationDate>
+	<author>YooRock!</author>
+	<authorEmail>support@yoorecipe.com</authorEmail>
+	<authorUrl>http://www.yoorecipe.com</authorUrl>
+	<copyright>GNU/GPL v2</copyright>
+	<license>Commercial License, All Rights Reserved</license>
+	<version>5.2.7</version>
+	<description>COM_YOORECIPE_DESCRIPTION</description>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<scriptfile>yoorecipe.script.php</scriptfile>
+	<update> <!-- Runs on update -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+		</update>
+ 
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>yoorecipe.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>komento_plugin.php</filename>
+		<filename>jomsocial_rule.xml</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>helpers</folder>
+		<folder>lib</folder>
+		<folder>models</folder>
+		<folder>layouts</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="site">
+		<language tag="bg-BG">language/bg-BG/bg-BG.com_yoorecipe.ini</language>
+		<language tag="cs-CZ">language/cs-CZ/cs-CZ.com_yoorecipe.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.com_yoorecipe.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.com_yoorecipe.ini</language>
+		<language tag="el-GR">language/el-GR/el-GR.com_yoorecipe.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_yoorecipe.ini</language>
+		<language tag="en-US">language/en-US/en-US.com_yoorecipe.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.com_yoorecipe.ini</language>
+		<language tag="fr-CA">language/fr-CA/fr-CA.com_yoorecipe.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_yoorecipe.ini</language>
+		<language tag="he-IL">language/he-IL/he-IL.com_yoorecipe.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.com_yoorecipe.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.com_yoorecipe.ini</language>
+		<language tag="nb-NO">language/nb-NO/nb-NO.com_yoorecipe.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.com_yoorecipe.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.com_yoorecipe.ini</language>
+		<language tag="pt-PT">language/pt-PT/pt-PT.com_yoorecipe.ini</language>
+		<language tag="ro-RO">language/ro-RO/ro-RO.com_yoorecipe.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.com_yoorecipe.ini</language>
+		<language tag="sk-SK">language/sk-SK/sk-SK.com_yoorecipe.ini</language>
+		<language tag="sl-SI">language/sl-SI/sl-SI.com_yoorecipe.ini</language>
+		<language tag="sv-SE">language/sv-SE/sv-SE.com_yoorecipe.ini</language>
+		<language tag="tr-TR">language/tr-TR/tr-TR.com_yoorecipe.ini</language>
+	</languages>
+ 
+	<media destination="com_yoorecipe" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>badges</folder>
+		<folder>styles</folder>
+		<folder>fonts</folder>
+	</media>
+	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_yoorecipe/images/tux-16x16.png">COM_YOORECIPE_MENU</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu link="option=com_yoorecipe" img="class:contact" alt="YooRecipe/Recipes">COM_YOORECIPE_RECIPES</menu>
+			<menu link="option=com_categories&amp;extension=com_yoorecipe" view="categories" img="class:contact-cat" alt="YooRecipe/Categories">COM_YOORECIPE_CATEGORIES</menu>
+			<menu link="option=com_yoorecipe&amp;view=servingtypes" view="servingtypes" img="class:contact-cat" alt="YooRecipe/Serving Types">COM_YOORECIPE_SUBMENU_SERVING_TYPES</menu>
+			<menu link="option=com_yoorecipe&amp;view=cuisines" view="cuisines" img="class:contact-cat" alt="YooRecipe/Cuisines">COM_YOORECIPE_SUBMENU_CUISINES</menu>
+			<menu link="option=com_yoorecipe&amp;view=comments" view="comments" img="class:contact-cat" alt="YooRecipe/Comments">COM_YOORECIPE_COMMENTS</menu>
+			<menu link="option=com_yoorecipe&amp;view=impex" view="impex" img="class:contact-cat" alt="YooRecipe/Impex">COM_YOORECIPE_IMPEX</menu>
+			<menu link="option=com_yoorecipe&amp;view=maintenance" view="maintenance" img="class:contact-cat" alt="YooRecipe/Maintenance">COM_YOORECIPE_MAINTENANCE</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>yoorecipe.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>yoorecipe.badge</filename>
+			<filename>yoorecipe.points</filename>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<!-- tables files section -->
+			<folder>tables</folder>
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="bg-BG">language/bg-BG/bg-BG.com_yoorecipe.ini</language>
+			<language tag="bg-BG">language/bg-BG/bg-BG.com_yoorecipe.sys.ini</language>
+			<language tag="cs-CZ">language/cs-CZ/cs-CZ.com_yoorecipe.ini</language>
+			<language tag="cs-CZ">language/cs-CZ/cs-CZ.com_yoorecipe.sys.ini</language>
+			<language tag="da-DK">language/da-DK/da-DK.com_yoorecipe.ini</language>
+			<language tag="da-DK">language/da-DK/da-DK.com_yoorecipe.sys.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_yoorecipe.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_yoorecipe.sys.ini</language>
+			<language tag="el-GR">language/el-GR/el-GR.com_yoorecipe.ini</language>
+			<language tag="el-GR">language/el-GR/el-GR.com_yoorecipe.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_yoorecipe.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_yoorecipe.sys.ini</language>
+			<language tag="en-US">language/en-US/en-US.com_yoorecipe.ini</language>
+			<language tag="en-US">language/en-US/en-US.com_yoorecipe.sys.ini</language>
+			<language tag="es-ES">language/es-ES/es-ES.com_yoorecipe.ini</language>
+			<language tag="es-ES">language/es-ES/es-ES.com_yoorecipe.sys.ini</language>
+			<language tag="fr-CA">language/fr-CA/fr-CA.com_yoorecipe.ini</language>
+			<language tag="fr-CA">language/fr-CA/fr-CA.com_yoorecipe.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_yoorecipe.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_yoorecipe.sys.ini</language>
+			<language tag="he-IL">language/he-IL/he-IL.com_yoorecipe.ini</language>
+			<language tag="he-IL">language/he-IL/he-IL.com_yoorecipe.sys.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_yoorecipe.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_yoorecipe.sys.ini</language>
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_yoorecipe.ini</language>
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_yoorecipe.sys.ini</language>
+			<language tag="nb-NO">language/nb-NO/nb-NO.com_yoorecipe.ini</language>
+			<language tag="nb-NO">language/nb-NO/nb-NO.com_yoorecipe.sys.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_yoorecipe.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_yoorecipe.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_yoorecipe.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_yoorecipe.sys.ini</language>
+			<language tag="pt-PT">language/pt-PT/pt-PT.com_yoorecipe.ini</language>
+			<language tag="pt-PT">language/pt-PT/pt-PT.com_yoorecipe.sys.ini</language>
+			<language tag="ro-RO">language/ro-RO/ro-RO.com_yoorecipe.ini</language>
+			<language tag="ro-RO">language/ro-RO/ro-RO.com_yoorecipe.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU/ru-RU.com_yoorecipe.ini</language>
+			<language tag="ru-RU">language/ru-RU/ru-RU.com_yoorecipe.sys.ini</language>
+			<language tag="sk-SK">language/sk-SK/sk-SK.com_yoorecipe.ini</language>
+			<language tag="sk-SK">language/sk-SK/sk-SK.com_yoorecipe.sys.ini</language>
+			<language tag="sl-SI">language/sl-SI/sl-SI.com_yoorecipe.ini</language>
+			<language tag="sl-SI">language/sl-SI/sl-SI.com_yoorecipe.sys.ini</language>
+			<language tag="sv-SE">language/sv-SE/sv-SE.com_yoorecipe.ini</language>
+			<language tag="sv-SE">language/sv-SE/sv-SE.com_yoorecipe.sys.ini</language>
+			<language tag="tr-TR">language/tr-TR/tr-TR.com_yoorecipe.ini</language>
+			<language tag="tr-TR">language/tr-TR/tr-TR.com_yoorecipe.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="YooRecipe Update Site">http://www.yoorecipe.com/updates/com_yoorecipe.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>System - Fail2Ban</name>
+    <author>mediahof</author>
+    <creationDate>Okt 2013</creationDate>
+    <copyright>(C) 2013 - 2014 mediahof. All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>mail@mediahof.de</authorEmail>
+    <authorUrl>www.mediahof.de</authorUrl>
+    <version>rev 4</version>
+    <description>developed by mediahof - Multimedia, Communication and IT</description>
+    <files>
+        <filename plugin="fail2ban">fail2ban.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="message" type="text" required="true" default="user %s authentication failure" label="Log-Message" description="Change this only if you know what are you doing! %s = Username." />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="collection" priority="1" name="mediahof">http://extensions.mediahof.de/extensions.xml</server>
+    </updateservers>
+</extension>

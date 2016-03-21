@@ -1,0 +1,1 @@
+UPDATE `#__yoorecipe_ingredients` i inner join #__yoorecipe_ingredients_groups ig on ig.recipe_id = i.recipe_id SET  i.group_id = ig.id  WHERE i.group_id = 0;

@@ -1,0 +1,92 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// Article Images
+// -------------------------
+
+.article-intro,
+.article-content {
+
+  // Add proper margin
+  img[align=left],
+  .img_caption.left,
+  .pull-left.item-image {
+    margin: 0 (@t3-global-margin*1.5) @t3-global-margin 0;
+  }
+
+  img[align=right],
+  .img_caption.right,
+  .pull-right.item-image {
+    margin: 0 0 @t3-global-margin (@t3-global-margin* 1.5);
+  }
+
+}
+
+.intro-image-wrap.pull-right {
+  margin: 0 0 0 (@t3-global-margin* 1.5);
+}
+
+.intro-image-wrap.pull-left {
+  margin: 0 (@t3-global-margin*1.5) 0 0;
+}
+
+.img-fulltext-left {
+  float: left;
+  margin-right: @t3-global-margin;
+}
+
+.img-fulltext-right {
+  float: right;
+  margin-left: @t3-global-margin;
+}
+
+.ie8.com_users .control-label{
+  width: 100%!important;
+  text-align: right!important;
+
+  label {
+    text-align: right!important;
+  }
+}
+
+#k2Container .catItemLinks {
+  .text-right {
+    float: left;
+  }
+
+  .col-sm-7 + .text-right {
+    float: right;
+  }
+}
+
+.old-ie .custom .animate.ja-ss-item .first {
+  left: 0!important;
+}
+
+.k2Pagination .pagination > li:first-child a:after {
+  content: "\f105";
+}
+
+.k2Pagination .pagination > li:last-child a:after {
+  content: "\f104";
+}
+
+.pagination-wrap,
+.pagination { 
+  .pagination {
+    li {
+      &:first-child {
+         a:after {
+          content: "\f105";
+        }
+      }
+
+      &:last-child {
+        a:after {
+          content: "\f104";
+        }
+      }   
+    }
+  }
+}

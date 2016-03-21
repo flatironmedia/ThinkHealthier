@@ -1,0 +1,56 @@
+<?php
+/**
+ * @version		3.5
+ * @package		DISQUS Comments for Joomla! (package)
+ * @author		JoomlaWorks - http://www.joomlaworks.net
+ * @copyright	Copyright (c) 2006 - 2014 JoomlaWorks Ltd. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
+// no direct access
+defined('_JEXEC') or die;
+
+?>
+
+<a id="startOfPage"></a>
+
+<?php echo $row->text; ?>
+
+<!-- <div class="disqus_btn-wrapper">
+	<button class="btn disqus_btn">Comments</button>
+</div> -->
+
+<?php if($disqusArticleCounter): ?>
+<!-- DISQUS comments counter and anchor link -->
+<div class="jwDisqusArticleCounter">
+		<button id="showcomments" class="jwDisqusArticleCounterLink disqus-comment-count btn disqus_btn" data-disqus-identifier="<?php echo $output->disqusIdentifier; ?>"><?php echo JText::_("JW_DISQUS_VIEW_COMMENTS"); ?></button>
+	<div class="clr"></div>
+</div>
+<?php endif; ?>
+
+<!-- DISQUS comments block -->
+<div id="comments_box" class="jwDisqusForm" style="display: none">
+	<?php echo $output->comments; ?>
+	<div id="jwDisqusFormFooter">
+		<a target="_blank" href="http://disqus.com" class="dsq-brlink">
+			<?php echo JText::_("JW_DISQUS_BLOG_COMMENTS_POWERED_BY"); ?> <span class="logo-disqus">DISQUS</span>
+		</a>
+		<a id="jwDisqusBackToTop" href="#startOfPage">
+			<?php echo JText::_("JW_DISQUS_BACK_TO_TOP"); ?>
+		</a>
+		<div class="clr"></div>
+	</div>
+</div>
+
+<div class="clr"></div>
+
+
+<script>
+jQuery( "#showcomments" ).click(function() {
+	jQuery( "#comments_box" ).toggle();
+});
+
+jQuery( "#showcommentsicon" ).click(function() {
+	jQuery( "#comments_box" ).css("display", "block");
+});
+</script>

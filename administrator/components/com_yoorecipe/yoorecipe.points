@@ -1,0 +1,38 @@
+[
+    {
+        "title"         : "COM_YOORECIPE_ACTION_CREATE_RECIPE",
+        "alias"         : "create-recipes",
+        "description"   : "COM_YOORECIPE_ACTION_CREATE_RECIPE_DESC",
+        "command"       : "recipes.create",
+        "extension"     : "com_yoorecipe",
+        "state"         : true,
+        "points"        : 5
+    },
+    {
+        "title"         : "COM_YOORECIPE_ACTION_DELETE_RECIPE",
+        "alias"         : "delete-recipes",
+        "description"   : "COM_YOORECIPE_ACTION_DELETE_RECIPE_DESC",
+        "command"       : "recipes.delete",
+        "extension"     : "com_yoorecipe",
+        "state"         : true,
+        "points"        : -5
+    },
+    {
+        "title"         : "COM_YOORECIPE_ACTION_CREATE_REVIEW",
+        "alias"         : "create-reviews",
+        "description"   : "COM_YOORECIPE_ACTION_CREATE_REVIEW_DESC",
+        "command"       : "reviews.create",
+        "extension"     : "com_yoorecipe",
+        "state"         : true,
+        "points"        : 5
+    },
+    {
+        "title"         : "COM_YOORECIPE_ACTION_DELETE_REVIEW",
+        "alias"         : "delete-reviews",
+        "description"   : "COM_YOORECIPE_ACTION_DELETE_REVIEW_DESC",
+        "command"       : "reviews.delete",
+        "extension"     : "com_yoorecipe",
+        "state"         : true,
+        "points"        : -5
+    }
+]

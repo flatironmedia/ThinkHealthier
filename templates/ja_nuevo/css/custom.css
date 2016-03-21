@@ -1,0 +1,285 @@
+/* Custom CSS by Dragan */
+#t3-header .logo {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.main-content-sidebar-left {
+	padding: 0;
+}
+
+.main-content-sidebar-left #t3-content.col-md-8  {
+  padding: 10px 18px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.article-bottom {
+  padding: 0;
+  margin-top: 20px;
+}
+.view-article .article-bottom, .view-recipe .article-bottom {
+  margin-top: 5px;
+}
+.article-bottom > .module:last-child {
+	margin-bottom: 10px !important;
+}
+
+.view-article .t3-mainbody {
+	padding-bottom: 0px;
+}
+
+.view-article .row > .t3-content.col-xs-12.col-sm-8.col-md-9,
+.view-form .row > .t3-content.col-xs-12.col-sm-8.col-md-9,
+.view-search .row > .t3-content.col-xs-12.col-sm-8.col-md-9 {
+	margin-top: 0px;
+	border-right: 0px none;
+}
+
+.view-article .row > .t3-content.col-xs-12,
+.view-form .row > .t3-content.col-xs-12,
+.view-search .row > .t3-content.col-xs-12 {
+  background-color: #fff;
+  border: 10px solid #f2f2f2;
+  padding: 20px 18px;
+}
+
+.view-article #t3-mainbody > .row,
+.view-form #t3-mainbody > .row,
+.view-search #t3-mainbody > .row {
+  background-color: #f2f2f2;
+}
+
+.view-form .row > .t3-content.col-xs-12 {
+  margin-top: 0px;
+}
+
+.view-article .item-image img {
+	padding: 0 !important;
+	max-width: 600px !important;
+	margin-bottom: 20px;
+}
+
+/* Chronoforms Custom CSS */
+
+form.chronoform .form-control.A {
+	background-color: #f7f7f7;
+	border-radius: 0;
+	border: 1px solid #A8D2C5;
+	min-width: 290px;
+}
+
+form.chronoform .control-label {
+	color: #666;
+	font-weight: 600;
+}
+
+form.chronoform .control-label > i.fa-asterisk {
+	display: none;
+}
+
+p.chrono_credits {
+	display: none;
+}
+
+.btn.th-btn {
+	border-radius: 0 !important;
+	background: #64857e !important;
+	border-color: #64857e !important;
+	color: #ffffff !important;
+	padding: 6px 24px !important;
+	line-height: 1.4 !important;
+	margin-left: 0 !important;
+	min-width: 0 !important;
+	height: 36px !important;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.btn.th-btn:hover {
+	background: #4c6660 !important;
+	border-color: #4c6660 !important;
+}
+
+form.chronoform .contact-info {
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+form.chronoform ul.contact-info-list > li {
+	list-style: none;	
+}
+
+@media screen and (min-width: 938px) {
+	form.chronoform #fin-contact-submit {
+		margin-left: 160px;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	form#chronoform-contact_us textarea {
+		width: 100% !important;
+	}
+}
+
+/* END of Chronoforms Custom CSS */
+
+/* Alternative intro text boxes  */
+
+
+#grid article .text-only-box {
+	padding: 25px 25px 40px;
+	background: rgb(61,155,129); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzZDliODEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmQ1OTRjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(61,155,129,1) 0%, rgba(45,89,76,1) 100%); /* FF3.6-15 */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(61,155,129,1)), color-stop(100%,rgba(45,89,76,1))); /* Chrome4-9,Safari4-5 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(61,155,129,1) 0%,rgba(45,89,76,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -o-radial-gradient(center, ellipse cover, rgba(61,155,129,1) 0%,rgba(45,89,76,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(61,155,129,1) 0%,rgba(45,89,76,1) 100%); /* IE10 preview */
+	background: radial-gradient(ellipse at center, rgba(61,155,129,1) 0%,rgba(45,89,76,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d9b81', endColorstr='#2d594c',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+#grid article .text-only-box-title {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+#grid article .text-only-box-intro {
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+/* END of Alternative intro text boxes */
+
+/* Article Social Sharing Icons */
+
+.item-page .joomla_add_this .addthis_button_facebook span,
+.com_yoorecipe .joomla_add_this .addthis_button_facebook span {
+	background: url('../images/article-share/fb-share.png') no-repeat;
+	background-color: transparent !important;
+	width: 81px !important;
+	height: 35px !important;
+	background-size: 81px 35px !important;
+	margin-right: 8px !important;
+}
+
+.item-page .joomla_add_this .addthis_button_facebook span svg,
+.com_yoorecipe .joomla_add_this .addthis_button_facebook span svg,
+.item-page .joomla_add_this .addthis_button_twitter span svg,
+.com_yoorecipe .joomla_add_this .addthis_button_twitter span svg {
+	display: none;
+}
+
+.item-page .joomla_add_this .addthis_button_twitter span,
+.com_yoorecipe .joomla_add_this .addthis_button_twitter span {
+	background: url('../images/article-share/tw-share.png') no-repeat;
+	background-color: transparent !important;
+	width: 81px !important;
+	height: 35px !important;
+	background-size: 81px 35px !important;
+	margin-right: 8px !important;
+}
+
+.item-page .joomla_add_this .at_PinItButton,
+.com_yoorecipe .joomla_add_this .at_PinItButton {
+	background: url('../images/article-share/pin-share.png') no-repeat;
+	background-color: transparent !important;
+	width: 81px !important;
+	height: 35px !important;
+	background-size: 81px 35px !important;
+	margin-right: 8px !important;
+}
+
+.item-page .joomla_add_this .atc_s.addthis_button_compact,
+.com_yoorecipe .joomla_add_this .atc_s.addthis_button_compact {
+	background: url('../images/article-share/other-share.png') no-repeat;
+	background-color: transparent !important;
+	width: 81px !important;
+	height: 35px !important;
+	background-size: 81px 35px !important;
+}
+
+.joomla_add_this .addthis_button_facebook:hover,
+.joomla_add_this .addthis_button_twitter:hover,
+.joomla_add_this .at_PinItButton:hover,
+.joomla_add_this .atc_s.addthis_button_compact:hover {
+    opacity: .75;
+}
+
+.item-page .addthis_counter.addthis_pill_style,
+.com_yoorecipe .addthis_counter.addthis_pill_style {
+	height: auto !important;
+}
+
+.item-page .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded,
+.com_yoorecipe .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded {
+	display: none !important;
+}
+
+/* .view-article #at20mc #at15s {
+	top: 543px !important;
+} */
+
+.com_yoorecipe #at20mc #at15s {
+	top: 383px !important;
+}
+
+.joomla_add_this {
+	position: absolute;
+	top: 5px;
+}
+
+.item-page .addthis_default_style .at300b,
+.com_yoorecipe .addthis_default_style .at300b {
+	padding: 0;
+}
+
+/* END of Article Social Sharing Icons */
+
+/* Module Related Articles */
+
+.module ul.relateditems {
+	margin-left: 0px;
+}
+
+.module ul.relateditems > li {
+	margin-bottom: 25px;
+	display: table;
+}
+
+.module ul.relateditems .related-left-block {
+	float: left;
+}
+
+.module ul.relateditems .related-left-block img {
+	width: 125px;
+	height: 75px;
+}
+
+.module ul.relateditems .related-right-block {
+	float: right;
+	max-width: 150px;
+	padding-left: 10px;
+}
+
+.module ul.relateditems .related-right-block .related-article-title {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+}
+
+.module ul.relateditems .related-right-block .related-article-text {
+	font-size: 12px;
+	color: #666;
+	line-height: 16px;
+}
+
+
+/* End of Module Realted Articles */

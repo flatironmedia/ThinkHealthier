@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jomsocial>
+	<component>com_yoorecipe</component>
+	<rules>
+		<rule>
+			<name>Create a recipe</name>
+			<description>Earn points when you create recipes.</description>
+			<action_string>recipes.create</action_string>
+			<publish>true</publish>
+			<points>5</points>
+			<access_level>2</access_level>
+		</rule>
+		<rule>
+			<name>Delete Recipes</name>
+			<description>Deduce points when you delete recipes.</description>
+			<action_string>recipes.delete</action_string>
+			<publish>true</publish>
+			<points>-5</points>
+			<access_level>2</access_level>
+		</rule>
+		<rule>
+			<name>Post a recipe review</name>
+			<description>Earn points when you add recipe reviews.</description>
+			<action_string>reviews.create</action_string>
+			<publish>true</publish>
+			<points>5</points>
+			<access_level>2</access_level>
+		</rule>
+		<rule>
+			<name>Delete Recipe Review</name>
+			<description>Deduce points when you delete recipe reviews.</description>
+			<action_string>reviews.delete</action_string>
+			<publish>true</publish>
+			<points>-5</points>
+			<access_level>2</access_level>
+		</rule>
+	</rules>
+</jomsocial>

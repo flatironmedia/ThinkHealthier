@@ -1,0 +1,378 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+// Content Slider
+#ja-contentsliderwrap {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.ja-contentslider {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.ja-contentslider-center-wrap {
+	background: url("@{t3-image-path}/slider-bg.jpg") repeat-x top center;
+}
+
+#ja-contentsliderwrap div.moduletable {
+	margin: 0;
+	padding: 0 ;
+}
+
+// Content Slider Center
+.ja-contentslider-center {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+.jsslide {
+	overflow: hidden;
+	.ja_slide_mask {
+	  background-color: rgba(0, 0, 0, 0.7);
+	  height: 250%;
+	  width: 150%;
+    cursor: pointer;
+	  position: absolute;
+	  @media (min-width: @screen-sm-min) {
+	  -webkit-transform: translate(265px, 145px) rotate(45deg);
+       -moz-transform: translate(265px, 145px) rotate(45deg);
+         -o-transform: translate(265px, 145px) rotate(45deg);
+        -ms-transform: translate(265px, 145px) rotate(45deg);
+            transform: translate(265px, 145px) rotate(45deg);
+	  .transition(all 0.2s ease-in-out 0s);
+	  .opacity(0);
+		}
+	}
+
+	.ja_slideContent {
+		padding: 0 @t3-global-padding;
+		width: 100%;
+		height: 100%;
+    position: absolute;
+    z-index: 2;
+		bottom: 0;
+    cursor: pointer;
+
+
+    @media (min-width: @screen-sm-min) {
+	  -webkit-transform: translate(400px, -300px);
+       -moz-transform: translate(400px, -300px);
+         -o-transform: translate(400px, -300px);
+        -ms-transform: translate(400px, -300px);
+            transform: translate(400px, -300px);
+    	.transition(all 0.2s ease-in-out 0s);
+  		}
+	}
+
+	i {
+		background: @brand-primary;
+		color: @white;
+		padding: @t3-global-padding/2;
+		border-radius: 40px;
+		margin-bottom: @t3-global-margin;
+	}
+
+	.ja_slidetitle {
+		font-weight: bold;
+    text-transform: uppercase;
+    font-family: @font-family-montserrat;
+    font-weight: @font-weight-normal;
+
+    a {
+    	color: @white;
+
+    	&:hover, &:focus, &:active {
+    		text-decoration: none;
+    	}
+    }
+	}
+
+	&:hover {
+		@media (min-width: @screen-sm-min) {
+			.ja_slide_mask {
+		    -webkit-transform: translate(-17%, -31%) rotate(45deg);
+	         -moz-transform: translate(-17%, -31%) rotate(45deg);
+	           -o-transform: translate(-17%, -31%) rotate(45deg);
+	          -ms-transform: translate(-17%, -31%) rotate(45deg);
+	              transform: translate(-17%, -31%) rotate(45deg);
+	      .opacity(1);
+			}
+
+			.ja_slideContent {
+		    -webkit-transform: translate(0px, 0px);
+	         -moz-transform: translate(0px, 0px);
+	           -o-transform: translate(0px, 0px);
+	          -ms-transform: translate(0px, 0px);
+	              transform: translate(0px, 0px);
+
+	    	-webkit-transition-delay: 0.3s;
+	    	   -moz-transition-delay: 0.3s;
+	    	     -o-transition-delay: 0.3s;
+	    	        transition-delay: 0.3s;
+			}
+		}
+	}
+}
+
+.ie8 {
+  .jsslide {
+  	.ja_slideContent {
+  		display: none;
+  	}
+
+  	.ja_slide_mask {
+  		display: none;
+  		background: @black;
+  	}
+
+  	&:hover {
+  		.ja_slideContent {
+  			display: block;
+  		}
+
+  		.ja_slide_mask {
+  			display: block;
+  			.opacity(0.7);
+  		}
+  	}
+  } 
+}
+
+.ie9, .ie10, .ie11 {
+	.box-align {
+		padding-top: 25%;
+	}
+}
+div.ja_slideimages {
+	height: 100%;
+	width: 100%;
+}
+
+#ja-contentsliderwrap .ja_slideintro {
+	padding: 10px 5px 0;
+}
+
+div.ja-slidereadmore {
+	margin: 10px 0 0;
+}
+
+.ja-contentslider-center span {
+	margin: 0;
+	padding: 0;
+}
+
+.ja-contentslider-center div.jsslide {
+}
+
+.ja-contentslider-center img {
+	margin: 0;
+	overflow: hidden;
+
+	@media (max-width: @screen-md-max) {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.ja-contentslider-center div.ja-image-holder {
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	margin: 0;
+	padding: 3px;
+}
+
+// Button control 
+.ja-button-control {
+	margin-bottom: @t3-global-margin;
+}
+
+.ja-button-control .ja-text-heading {
+	font-weight:bold;
+	padding: 5px;
+}
+
+.ja-button-control a {
+	display: inline-block;
+	padding: @t3-global-padding/3 @t3-global-padding;
+	color: @brand-primary-dark;
+	border: 2px solid transparent;
+}
+
+.ja-button-control a:hover,
+.ja-button-control a:active,
+.ja-button-control a:focus {
+	text-decoration: none;
+	color: @brand-primary;
+	outline: none;
+}
+
+.ja-button-control a.active {
+	text-decoration: none;
+	color: @brand-primary;
+	border-color: @brand-primary;
+	border-radius: 20px;
+}
+
+.ja-contentslider-left,
+.ja-contentslider-right {
+	background: url("@{t3-image-path}/bc-lr.png") no-repeat top right;
+	position: absolute;
+	height: 60px;
+	right: @t3-global-padding;
+	top: 50%;
+	width: 60px;
+	z-index: 2;
+}
+
+.ja-contentslider-left {
+	background: url("@{t3-image-path}/bc-lr.png") no-repeat top left;
+	left: @t3-global-padding;
+	right: auto;
+}
+
+.ja-contentslider-left:hover,
+.ja-contentslider-right:hover {
+	background: url("@{t3-image-path}/bc-lr.png") no-repeat bottom right;
+	cursor: pointer;
+}
+
+.ja-contentslider-left:hover {
+	background: url("@{t3-image-path}/bc-lr.png") no-repeat bottom left;
+}
+
+.ja-button-control strong {
+	font-size: 110%;
+	padding-left: 20px;
+	line-height: 27px;
+	display: block;
+	float: left;
+}
+
+// Tooltips 
+.tooltips .ja-cs-tooltips {
+	background: #fff !important;
+	border: 2px solid #ffcc66;
+	width: 200px;
+	padding: 10px;
+	box-shadow: 0 2px 5px #999;
+	-moz-box-shadow: 0 2px 5px #999;
+	-webkit-box-shadow: 0 2px 5px #999;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.tooltips .ja-cs-tooltips h3 {
+	background: #EBF2F6;
+	border-bottom: 1px solid #cfd9df;
+	color: #29739d;
+	font-size: 110%;
+	margin: -10px -10px 10px -10px;
+	padding: 5px 10px;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.tooltips .ja-cs-tooltips ul li {
+	display: block;
+	font-size: 11px;
+}
+
+.tooltips .ja-cs-tooltips ul li.ja-rating-wrap strong {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.tooltips .ja-cs-tooltips .ja-item-rating {
+	background: url("@{t3-image-path}/transparent_stars.png") repeat-x left top;
+	float: left;
+	height: 20px;
+	width: 100px;
+}
+
+.tooltips .ja-cs-tooltips .ja-current-rating {
+	background: url("@{t3-image-path}/transparent_stars.png") repeat-x left center;
+	height: 20px;
+}
+
+// Porfolio
+.ja-contentslider-1 {
+	text-align: center;
+
+	.ja-contentslider-left, 
+	.ja-contentslider-right {
+		margin-top: -30px;
+	}
+
+	.jsslide {
+		.box-align {
+			height: 100px;
+		}
+
+		.ja_slidetitle {
+			text-transform: uppercase;
+		}
+
+		.ja_slideContent {
+			text-align: left;
+			background: @gray-dark;
+			-webkit-transform: translate(0, 60%);
+	       -moz-transform: translate(0, 60%);
+	         -o-transform: translate(0, 60%);
+	        -ms-transform: translate(0, 60%);
+	            transform: translate(0, 60%);
+	    border-right: 1px solid @gray-darker;
+
+			@media (min-width: @screen-md-min) {
+		  -webkit-transform: translate(0, 100%);
+	       -moz-transform: translate(0, 100%);
+	         -o-transform: translate(0, 100%);
+	        -ms-transform: translate(0, 100%);
+	            transform: translate(0, 100%);
+	            border-right: 0;
+	    .transition(all 0.2s ease-in-out 0s);
+	  	}
+  	}
+
+  	.ja_slideimages {
+		  -webkit-transform: translate(0, 0);
+	       -moz-transform: translate(0, 0);
+	         -o-transform: translate(0, 0);
+	        -ms-transform: translate(0, 0);
+	            transform: translate(0, 0);
+	    .transition(all 0.2s ease-in-out 0s);
+		}
+
+		&:hover {
+			.ja_slideContent {
+				@media (min-width: @screen-md-min) {
+			  -webkit-transform: translate(0, 60%);
+		       -moz-transform: translate(0, 60%);
+		         -o-transform: translate(0, 60%);
+		        -ms-transform: translate(0, 60%);
+		            transform: translate(0, 60%);
+		  	}
+	  	}
+
+	  	.ja_slideimages {
+	  		@media (min-width: @screen-md-min) {
+			  -webkit-transform: translate(0, -40%);
+		       -moz-transform: translate(0, -40%);
+		         -o-transform: translate(0, -40%);
+		        -ms-transform: translate(0, -40%);
+		            transform: translate(0, -40%);
+		    }
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `#__yoorecipe_ingredients_groups` ADD `featured` TINYINT( 3 ) UNSIGNED NOT NULL AFTER `published`;

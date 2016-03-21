@@ -1,0 +1,1 @@
+alter table `#__yoorecipe` add column `notes` LONGTEXT NOT NULL after `preparation`;

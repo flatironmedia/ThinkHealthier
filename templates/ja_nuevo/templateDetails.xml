@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>JA_Nuevo</name>
+	<version>1.0.2</version>
+	<creationDate>27 March 2015</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div class="overview-header">
+			<h2>
+			  <small style="display: block;">Responsive Joomla template for app page - <strong>JA Nuevo</strong>.</small>
+			</h2>
+			<p>The app page responsive Joomla template for Joomla 3 & Joomla 2.5 - JA Nuevo is dedicated for apps startup or services page.</p>
+			<p>It's a built-in T3 Framework template with Bootstrap 3, RTL Language Layout, K2 Component, and responsive.</p>
+      <p>JA Nuevo is modern design template with lot of whitespace and simplicity.</p>
+			<p>It helps enhance the performance of a landing page, improve readability and make a bold first impression.</p>
+      <p>JA Nuevo is flexible with robust tools, you don't have to be CSS ninja, or PHP geek to do the customization.</p>
+			<p>Make use of ThemeMagic to tweak the CSS properties, transform the layout with Layout Configurator, or simply build your own Megamenu.</p>
+      <p>JA Nuevo is a must have Joomla template for app page, business, services, or landing pages.</p>
+			</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>templateHelper.php</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_nuevo.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_nuevo.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>mainnav</position>
+		<position>scroller</position>
+		<position>below-menu</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>article-top</position>
+		<position>article-bottom</position>
+		<position>masthead</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>features-intro-1</position>
+		<position>features-intro-2</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+		<position>content-top</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+            <!-- Sample for add or disable template parameters -->
+            <fieldset name="items_params" label="T3_PARAMS_ITEMS_DISPLAY">
+                <field
+                        name="itemlg"
+                        type="text"
+                        global="4"
+                        label="TPL_NUMBER_IN_GRID_LG"
+                        description="TPL_NUMBER_IN_GRID_LG_DESC" />
+                <field
+                        name="itemmd"
+                        type="text"
+                        global="3"
+                        label="TPL_NUMBER_IN_GRID_MD"
+                        description="TPL_NUMBER_IN_GRID_MD_DESC" />
+                <field
+                        name="itemsm"
+                        type="text"
+                        global="2"
+                        label="TPL_NUMBER_IN_GRID_SM"
+                        description="TPL_NUMBER_IN_GRID_SM_DESC" />
+                <field
+                        name="itemsmx"
+                        type="text"
+                        global="1"
+                        label="TPL_NUMBER_IN_GRID_SMX"
+                        description="TPL_NUMBER_IN_GRID_SMX_DESC" />
+                <field
+                        name="itemxs"
+                        type="text"
+                        global="1"
+                        label="TPL_NUMBER_IN_GRID_XS"
+                        description="TPL_NUMBER_IN_GRID_XS_DESC" />
+                <field
+                        name="gutter"
+                        type="text"
+                        global="1"
+                        label="TPL_GUTTER_IN_GRID"
+                        description="TPL_GUTTER_IN_GRID_DESC" />
+            </fieldset>
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+
+</extension>

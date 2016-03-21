@@ -1,0 +1,1 @@
+ALTER TABLE `#__yoorecipe_ingredients` DROP column `lang`;

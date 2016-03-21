@@ -1,0 +1,231 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+.ja-slideshow {
+	background: url("@{t3-image-path}/slideshow-bg.jpg");
+
+	.container {
+		//Control screen < 1350px
+		@media screen and (max-width: 1350px) {
+			padding-left: (@t3-global-padding * 3.5);
+			padding-right: (@t3-global-padding * 3.5);
+		}
+	}
+}
+
+.ja-ss-slideshow {
+	position: relative;
+	height: 309px;
+}
+
+.ja-ss-loading:before {
+	content: "";
+	display: block;
+	background: url("@{t3-image-path}/slideloading.gif") transparent no-repeat center center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+ 
+.ja-ss-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.ja-ss-items {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.ja-ss-item {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 100%;
+	min-height: 260px;
+	z-index: 1;
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.ja-ss-item.prev {
+	display: block;
+}
+
+.ja-ss-item.next {
+	display: block;
+}
+
+.ja-ss-item.curr {
+	z-index: 2; /* IE7,8 */
+}
+
+.ja-ss-item img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.ja-ss-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.ja-ss-mask.active {
+}
+
+.ja-ss-desc {
+	position: absolute;
+	left: 20px;
+	top: 35%;
+	width: 60%;
+	padding: 0;
+	color: @white;
+	font-size: @font-size-h4;
+	z-index: 3;
+
+	.btn {
+		margin-top: @t3-global-margin;
+	}
+}
+
+.ja-ss-desc h3 {
+	margin: 0 0 @t3-global-margin;
+	font-size: 60px;
+	color: @white;
+	font-weight: @font-weight-lighter;
+}
+
+.ja-ss-desc h3 a {
+	color: @white;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.ja-ss-desc p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 0;
+}
+
+.ja-ss-btns {
+	z-index: 10;
+	-webkit-transform: none!important;
+
+	.ja-ss-playback,
+	.ja-ss-stop,
+	.ja-ss-play {
+		display: none;
+	}
+}
+
+.ja-ss-btns span {
+	background: url("@{t3-image-path}/bc-lr.png") no-repeat left top;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 60px;
+	margin-top: -30px;
+	padding: 0;
+	position: absolute;
+	text-indent: -999em;
+	top: 50%;
+	width: 60px;
+	z-index: 100;
+}
+
+.ja-ss-btns .ja-ss-prev {
+	background-position: 0 0;
+	left: -(@t3-global-margin * 3.5);
+}
+
+.ja-ss-btns .ja-ss-prev:hover {
+  background-position: left bottom;
+}
+
+.ja-ss-btns .ja-ss-next {
+	background-position: right 0;
+	right: -(@t3-global-margin * 3.5);
+}
+
+.ja-ss-btns .ja-ss-next:hover {
+  background-position: right bottom;
+}
+
+.ja-ss-thumbs-wrap {
+	height: 16px;
+	width: 100%;
+	clear: both;
+	position: absolute;
+	bottom: 30px;
+	overflow: hidden;
+	z-index: 1000;
+	line-height: 1;
+}
+
+/* dynamic classes */
+.ja-ss-thumb-height {
+
+}
+
+.ja-ss-thumb-width {
+
+}
+
+.ja-ss-thumbs {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%; /* horizontal thumbnails */
+	white-space: nowrap;
+	/*font-size: 0; can be use to remove space between inline-block*/
+}
+
+.ja-ss-thumbs .ja-ss-thumb {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 3px;
+	text-align: center;
+	vertical-align: bottom;
+	cursor: pointer;
+	border: 2px solid #aaa;
+	height: 10px;
+	width: 10px;
+	text-indent: -999em;
+	text-indent: 0\9;
+	border-radius: 10px;
+
+	/* useful if you don't want a bg color from leaking outside the border: */
+	background-clip: padding-box;
+}
+
+.ja-ss-thumbs .ja-ss-thumb img {
+
+}
+
+.ja-ss-thumbs .ja-ss-thumb.active {
+	border-color: @brand-primary;
+	background: @brand-primary;
+}
+
+.ja-ss-thumbs .ja-ss-thumb.active img {
+	opacity: 1;
+}

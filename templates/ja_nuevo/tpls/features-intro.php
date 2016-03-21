@@ -1,0 +1,63 @@
+<?php
+/**
+ * ------------------------------------------------------------------------
+ * JA Nuevo template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+
+defined('_JEXEC') or die;
+
+$noneResponsive = ""; 
+
+if (!($this->getParam('responsive', 1))): 
+ 
+ $noneResponsive = " none-responsive";
+
+endif;
+?>
+
+<!DOCTYPE html>
+<html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>"
+	  class='<jdoc:include type="pageclass" /> <?php echo $noneResponsive; ?>'>
+
+<head>
+	<jdoc:include type="head" />
+	<?php $this->loadBlock('head') ?>
+</head>
+
+<body class="<?php if ($this->getParam('navigation_collapse_enable')) : echo 'has-navbar-header'; endif; ?>">
+
+<div class="t3-wrapper"> <!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
+
+  	<?php $this->loadBlock('header') ?>
+  
+ 	<?php $this->loadBlock('slideshow') ?>
+
+	<?php $this->loadBlock('features-intro-1') ?>
+
+  	<?php $this->loadBlock('spotlight-1') ?>
+  	
+  	<?php if($this->hasMessage()) : ?>
+	  	<div class="container message-home">
+			<jdoc:include type="message" />
+		</div>
+	<?php endif ?>
+
+  	<?php $this->loadBlock('features-intro-2') ?>
+
+  	<?php $this->loadBlock('navhelper') ?>
+
+  	<?php $this->loadBlock('footer') ?>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		
+		<field
+			name="id"
+			type="hidden"
+		/>
+		
+		<field
+			name="code"
+			type="text"
+			label="COM_YOORECIPE_LABEL_CUISINE_CODE"
+			description="COM_YOORECIPE_LABEL_CUISINE_CODE_DESC"
+			required="true"
+		/>
+		
+		<field
+			name="published"
+			type="radio"
+			class="btn-group"
+			label="COM_YOORECIPE_YOORECIPE_PUBLISHED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PUBLISHEDPUBLISHED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+</form>

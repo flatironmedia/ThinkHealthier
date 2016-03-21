@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>JA System Lazyload Plugin</name>
+	<author>Joomla! Project</author>
+	<creationDate>Dec 2013</creationDate>
+	<copyright>Copyright (c), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.6</version>
+	<description>
+	<![CDATA[
+		<div style='text-align: left;'>
+		<span style="color: #008000;"><strong>JA Lazyload plugin for Joomla 2.5</strong></span><br />
+		<p><img alt="JA Lazyload Plugin" src="http://www.joomlart.com/images/stories/extensions/joomla/ja_lazyload.png" /></p>
+		<div style="font-weight:normal">
+			<p>Lazy Load is a jQuery plugin written in JavaScript. <br>
+				It delays loading of images in long web pages. <br>
+				Images outside of viewport (visible part of web page) wont be loaded before user scrolls to them. <br>
+				This is opposite of image preloading.</p>
+			
+			<p>Using Lazy Load on long web pages containing many large images makes the page load faster. <br>
+				Browser will be in ready state after loading visible images. In some cases it can also help to reduce server load.</p>
+			<p><a href="http://www.appelsiini.net/projects/lazyload" title="Lazy Load">Lazy Load</a> is provided by by Mika Tuupola, originally inspired by <a href="http://developer.yahoo.com/yui/imageloader/" title="YUI ImageLoader">YUI ImageLoader</a>  Utility by Matt Mlinac .</p> <br />
+			<p>
+				<span style="color: #008000;"><strong>Links:</strong></span><br />
+				<ul>
+					<li><a target="_blank" href="http://pm.joomlart.com/browse/JAECPLGLAZYLOAD" title="Updates &amp; Versions">Updates &amp; Versions</a></li>
+				</ul>
+			</p>
+			<p>Copyright 2004 - 2013 <a title="Visit Joomlart.com!" href="http://www.joomlart.com/" target="_blank">JoomlArt.com</a>.</p>
+		</div>
+		</div>
+	]]>
+	</description>
+	<files>
+		<filename plugin="jalazyload">jalazyload.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jalazyload.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/jalazyload/assets/elements">
+				<field name="lazyload_minwidth" 
+					type="text" 
+					default="100" 
+					filter="UINIT" 
+					label="PLG_JALAZYLOAD_MINWIDTH" 
+					description="PLG_JALAZYLOAD_MINWIDTH_DESC" 
+					class="validate-numeric" />
+				<field name="failure_limit" 
+					type="text" default="10" 
+					filter="UINIT" 
+					label="FAILURE_LIMIT" 
+					description="FAILURE_LIMIT_DESC" 
+					class="validate-numeric" />
+				<field name="threshold" 
+					type="text" default="0" 
+					filter="UINIT" 
+					label="THRESHOLD" 
+					description="THRESHOLD_DESC" 
+					class="validate-numeric" />
+				<field name="sharelimit" 
+					type="text" 
+					default="5" 
+					filter="UINIT" 
+					label="SHARELIMIT" 
+					description="SHARELIMIT_DESC" 
+					class="validate-numeric" />
+				<field name="display_effect" 
+					type="list" 
+					default="show" 
+					label="DISPLAY_EFFECT" 
+					description="DISPLAY_EFFECT_DESC">
+					<option value="show">Show</option>
+					<option value="fadeIn">fadeIn</option>
+				</field>
+				<field name="load_invisible" 
+					type="radio"
+					class="btn-group" 
+					default="1" 
+					label="LOAD_INVISIBLE" 
+					description="LOAD_INVISIBLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="exclude" 
+					cols="40" 
+					rows="5" 
+					type="textarea" 
+					default="" 
+					label="JALAZY_EXCLUDE" 
+					description="JALAZY_EXCLUDE_DESC" />
+				<field type="japanel" path="/plugins/system/jalazyload/assets/elements/" />
+          	</fieldset>
+		</fields>
+	</config>
+</extension>

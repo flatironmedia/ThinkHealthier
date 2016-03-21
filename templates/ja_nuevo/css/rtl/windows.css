@@ -1,0 +1,77 @@
+.window .span1,
+.window .span2,
+.window .span3,
+.window .span4,
+.window .span5,
+.window .span6,
+.window .span7,
+.window .span8,
+.window .span9,
+.window .span10,
+.window .span11,
+.window .span12 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.window body {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.window .window-mainbody {
+  padding: 20px;
+}
+.window .window-mainbody fieldset.filter {
+  overflow: unset;
+}
+.window .window-mainbody fieldset.filter .filters > div {
+  display: inline-block;
+}
+.window form table {
+  background: #ffffff;
+}
+.window .btn {
+  border: 2px solid #73bfe6;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+}
+.window .btn-toolbar .btn,
+.window .btn-toolbar #filter_search {
+  margin-top: 0;
+}
+.window #imageForm .well,
+.window #uploadForm .well {
+  background: #f5f5f5;
+}
+.window #imageForm .well .row > .span9,
+.window #uploadForm .well .row > .span9 {
+  width: 50%;
+}
+.window #imageForm .well .row > .span9 .control-label,
+.window #uploadForm .well .row > .span9 .control-label {
+  display: inline-block;
+}
+.window #imageForm .well .pull-right,
+.window #uploadForm .well .pull-right {
+  margin-left: 10px;
+}
+.window #imageForm .well .controls,
+.window #uploadForm .well .controls {
+  display: inline-flex;
+}
+.window #imageForm .chzn-container,
+.window #uploadForm .chzn-container {
+  width: 200px !important;
+}
+.window #uploadForm .control-group .controls {
+  display: block;
+}
+.window .manager .thumbnail {
+  font-size: 13px;
+}
+.view-imagesList.window .window-mainbody {
+  padding: 0;
+}

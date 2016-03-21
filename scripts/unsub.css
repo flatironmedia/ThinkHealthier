@@ -1,0 +1,83 @@
+	div.wrapper { margin: 0 auto; width: 1000px;padding:0;}
+	#leftcol { width:0px;padding:0;}
+	#rightcol { width:0px;padding:0;}
+	#maincol { margin-left:0px;margin-right:0px;padding:0;}
+	#mainblock {margin-left:0px;margin-right:0px;padding:0;}
+	#leftbanner { width:0px;padding:0;}
+	#rightbanner { width:0px;padding:0;}
+	#moduleslider-size { height:220px;}
+	#inset-block-left { width:0px;padding:0;}
+	#inset-block-right { width:0px;padding:0;}
+	#maincontent-block { margin-right:0px;margin-left:0px;padding:0;}
+	.changeLnk {color:#00F;}
+	.changeLnk strong {color:#333;}
+	.signupBoxNoteAbout {font-size:11px;color:#999;}
+	.signupBoxNoteAboutPriv {padding:0 7px 0 8px;}
+	.unsub3Title {padding:5px; margin-top:0; color:#bf6897; background-color:#ededed; font:normal 28px/34px "Lucida Sans", verdana, arial, sans-serif;}
+	.unsub3AltColor {color:#9d8391;}
+	.unsub3Text, .unsub3NLs {color:#333; font:normal 13px/15px verdana, arial, sans-serif;}
+	.unsub3NLs {font-size:24px; line-height:30px;}
+	.unsub3CurSub {padding:5px 10px; background-color:#bf6897; text-transform:uppercase;}
+	.signupBoxNLsItemAbout {padding:0;}
+	label.unsub3Label {font-size:24px;}
+	.signInBoxOuterUnsub3 {border:1px solid #999; padding:15px;}
+
+	/* signup box begin */
+	.moduletableSignup {width:300px; margin:15px;}
+	.moduletableSignupBoxHome { width:298px; background: url("/images/homeSignupBoxBckHome.png") no-repeat; padding-bottom:10px; margin:15px 15px; }
+	.moduletableSignupBox { width:298px; background:#EFEEEF url("/images/homeSignupBoxBck.jpg") no-repeat; padding-bottom:10px; margin:15px 15px; }
+	/* .moduletableSignupBox { width:298px; background:#F5F5F5 url("/images/signupBoxBck.jpg") no-repeat; padding-bottom:10px; margin:15px 1px 10px 1px; } */
+	.moduletableSignupBoxHome input, .moduletableSignupBox input { /*border: 1px solid #BFBFBF;*/color:#33192B;font-size:11px;font-weight:bold;margin-left:0;}
+	input.searchBox { padding:6px;width:147px; height:12px; }
+	.moduletableSignupBoxHome hr, .moduletableSignupBox hr { text-align:center; height:1px; width:90%; }
+	.moduletableSignupBoxInner { margin:0px 20px; color:#333; font-size:11px; }
+	.signupBoxSubTitle, .signupBoxSubTitleAbout { color:#45323f; font:normal 14px arial, sans-serif; margin:11px 0; }
+	.signupBoxSubTitleAbout { color:#333; }
+	.signupBoxNLs { clear:both; width:258px; }
+	.signupBoxNLsAbout { clear:both; margin:10px 10px 30px 10px; padding:10px; width:631px; border:1px solid #CCC; }
+	.signupBoxNLsAbout2, .signupBoxNLsMDMOuter { clear:both; margin:10px 10px 30px 10px; padding:0px; width:651px; border:1px solid #CCC; }
+	.signupBoxNLsMDMOuter { margin-top:0px; }
+	.signupBoxNLsMDMTop { margin:1px 1px 0px 1px; padding-left:165px; height:542px; font:normal 10px/12px verdana, arial, sans-serif; color:#666; background:#FFF url("/images/mdmNLsWomen.jpg") no-repeat; }
+	.signupBoxNLsMDMTop label { font:normal 12px/14px verdana, arial, sans-serif; color:#666; white-space:nowrap; }
+	.signupBoxNLsMDMEmail { padding:0px 0px 0px 10px; height:92px; background:#FFF url("/images/mdmNlsEmailBck.gif") repeat-x; }
+	.signupBoxNLsMDMEmail #email { font-weight:bold; color:#382D33; width:315px; }
+	.signupBoxNLsMDMEmail div { font:normal 10px/12px verdana, arial, sans-serif; color:#666; }
+	.signupBoxNLsMDMBottom { margin:0px 1px 1px 1px; padding-right:5px; height:108px; font:normal 12px/14px arial, verdana, sans-serif; color:#FFF; background:#331A2C url("/images/mdmNlsSecurityBck.gif") repeat-x; }
+	.signupBoxNLsMDMBottom img { margin-right:10px; }
+	.signupBoxNLsMDMBottom a { color:#FFF; text-decoration:underline; }
+	.signupBoxNLsMDMBottom a:hover { text-decoration:none; }
+	.signupBoxNLsItem, .signupBoxNLsItemAbout { font:normal 10px verdana, arial, sans-serif; margin-bottom:12px; padding-left:15px; padding-right:15px; }
+	.signupBoxNLsItemSubDate { font:normal 9px/11px verdana,arial,sans-serif;color:#666;white-space:nowrap; }
+	.signupBoxNLsTitleHome, .signupBoxNLsTitle, .signupBoxNLsTitleAbout { font:bold 13px arial, sans-serif; }
+	.signupBoxNLsTitle { color:#333; }
+	.signupBoxNLsLeft, .signupBoxNLsRight { float:left; width:50%; }
+	.signupBoxNote, .signupBoxNoteAbout { color:#333333;font-size:9px;line-height:1.2em;margin-bottom:7px;margin-top:2px;padding-right:75px;text-align:center;}
+	.signupBoxNoteAbout { text-align:left; }
+	.signInBoxInner { border:1px solid #e7e7e7; background-color:#f6f5f6; margin:20px 0px; padding:10px 5px 10px 10px; }
+	.signInBoxInner label { font-weight:bold; font-size:13px; }
+	.signInBoxInner input#getSubsEmail { padding:2px; margin:0px 10px 0px 2px; border:1px solid #999; width:160px; font-size:12px; height:20px; }
+	.signInBoxMessage { font-weight:bold; margin-bottom:15px; }
+	.signInBoxSubHdr { padding:10px; margin-bottom:5px; font-size:16px; font-weight:bold; background-color:#EDEDED; }
+	/* signup box end */
+
+.changeLnk {color:#00F;}
+.changeLnk strong {color:#333;}
+.signupBoxNoteAbout {font-size:11px;color:#999;}
+.signupBoxNoteAboutPriv {padding:0 7px 0 8px;}
+.unsub3Title {padding:5px; margin-top:0; color:#bf6897; background-color:#ededed; font:normal 28px/34px "Lucida Sans", verdana, arial, sans-serif;}
+.unsub3AltColor {color:#9d8391;}
+.unsub3Text, .unsub3NLs {color:#333; font:normal 13px/15px verdana, arial, sans-serif;}
+.unsub3NLs {font-size:22px; line-height:30px;}
+.unsub3CurSub {padding:5px 10px; background-color:#bf6897; text-transform:uppercase;}
+.signupBoxNLsItemAbout {padding:0;}
+label.unsub3Label {font-size:22px;}
+.signInBoxOuterUnsub3 {border:1px solid #999; padding:15px;}
+
+td, tr td {border:none;}
+th, td {
+    line-height: 17px;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.curSub {text-align:center; background-color:#67c0aa; margin:10px; padding:5px 0; font-size:.85em; color:#fff; font-weight:bold;}

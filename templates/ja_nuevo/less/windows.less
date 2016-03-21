@@ -1,0 +1,104 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+// ------------------------------------------------------
+// POPUP WINDOWS STYLES
+// ------------------------------------------------------
+
+// Main Body (component.php)
+// ----------------------------------------
+.window {
+
+  // Reset the col gutter
+  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  // Reset the body
+  body {
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .window-mainbody {
+    padding: 20px;
+
+    fieldset.filter {
+      overflow: unset;
+
+     .filters > div{
+        display: inline-block;
+     } 
+    }
+  }
+
+  form table {
+    background: @white;
+  }
+
+  .btn {
+    border: 2px solid @brand-primary;
+    border-radius: 20px;
+    font-family: @font-family-montserrat;
+    font-size: @font-size-small;
+    text-transform: uppercase;
+    padding: (@t3-global-padding / 3) @t3-global-padding;
+  }
+
+  .btn-toolbar {
+    .btn,
+    #filter_search {
+      margin-top: 0;
+    }
+  }
+
+
+  // Images Form
+  #imageForm,
+  #uploadForm { 
+    .well {
+      background: #f5f5f5;
+
+      .row > .span9 {
+        width: 50%;
+
+        .control-label {
+          display: inline-block;
+        }
+      }
+
+      .pull-right {
+        margin-right: 10px;
+      }
+
+      .controls {
+        display: inline-flex;
+      }
+    }
+
+    .chzn-container {
+      width: 200px !important;
+    }
+  }
+
+  #uploadForm {
+    .control-group .controls {
+      display: block;
+    }
+  }
+
+  .manager .thumbnail {
+    font-size: 13px;
+  }
+}
+
+.view-imagesList.window .window-mainbody {
+  padding: 0;
+}

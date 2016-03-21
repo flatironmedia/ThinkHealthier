@@ -1,0 +1,158 @@
+<?php
+/*------------------------------------------------------------------------
+# com_yoorecipe -  YooRecipe! Joomla 2.5 & 3.x recipe component
+# ------------------------------------------------------------------------
+# author    YooRock!
+# copyright Copyright (C) 2012 yoorock.fr. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://www.yoorecipe.com
+# Technical Support:  Forum - http://www.yoorecipe.com/
+-------------------------------------------------------------------------*/
+
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+
+// import the Joomla modellist library
+jimport('joomla.application.component.modellist');
+
+/**
+ * YooRecipeList Model
+ */
+class YooRecipeModelServingTypes extends JModelList
+{
+
+	/**
+	 * Constructor.
+	 *
+	 * @param	array	An optional associative array of configuration settings.
+	 * @see		JController
+	 * @since	1.6
+	 */
+	public function __construct($config = array())
+	{
+	
+		if (empty($config['filter_fields'])) {
+			$config['filter_fields'] = array(
+				'id', 'u.id',
+				'code', 'u.code',
+				'ordering', 'u.ordering',
+				'published', 'u.published',
+				'creation_date', 'u.creation_date'
+			);
+		}
+
+		parent::__construct($config);
+	}
+	
+	/**
+	 * Method to auto-populate the model state.
+	 *
+	 * Note. Calling getState in this method will result in recursion.
+	 *
+	 * @return	void
+	 * @since	1.6
+	 */
+	protected function populateState($ordering = null, $direction = null)
+	{
+		// Initialise variables.
+		$app = JFactory::getApplication();
+		$session = JFactory::getSession();
+
+		// Adjust the context to support modal layouts.
+		$input 	= JFactory::getApplication()->input;
+		if ($layout = $input->get('layout')) {
+			$this->context .= '.'.$layout;
+		}
+
+		$search = $this->getUserStateFromRequest($this->context.'.filter.search', 'filter_search');
+		$this->setState('filter.search', $search);
+
+		$published = $this->getUserStateFromRequest($this->context.'.filter.published', 'filter_published', '');
+		$this->setState('filter.published', $published);
+		
+		$code = $this->getUserStateFromRequest($this->context.'.filter.code', 'filter_code', '');
+		$this->setState('filter.code', $code);
+		
+		// List state information.
+		parent::populateState('u.code', 'asc');
+	}
+	
+	/**
+	 * Method to build an SQL query to load the list data.
+	 *
+	 * @return	string	An SQL query
+	 */
+	protected function getListQuery()
+	{
+		// Create a new query object.		
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+
+		// Select the required fields from the table.
+		$query->select(
+			$this->getState(
+				'list.select',
+				'u.id, u.code, u.ordering, u.published, u.creation_date'
+			)
+		);
+
+		$query->from('#__yoorecipe_serving_types as u');
+		
+		// Filter by search in title.
+		$search = $this->getState('filter.search');
+		if (!empty($search)) {
+			if (stripos($search, 'id:') === 0) {
+				$query->where('u.id = '.(int) substr($search, 3));
+			}
+			else {
+				$search = $db->quote('%'.$db->escape($search, true).'%');
+				$query->where('u.code LIKE '.$search);
+			}
+		}
+		
+		// Filter by published state
+		$published = $this->getState('filter.published');
+		if (is_numeric($published)) {
+			$query->where('u.published = '.(int) $published);
+		}
+		
+		$code = $this->getState('filter.code');
+		if ($code != '') {
+			$query->where('u.code = '.$db->quote($code));
+		}
+		
+		// Add the list ordering clause.
+		$orderCol	= $this->state->get('list.ordering', 'code');
+		$orderDirn	= $this->state->get('list.direction', 'asc');
+		$query->order($db->escape($orderCol.' '.$orderDirn));
+	
+		return $query;
+	}
+	
+	/**
+	 * getAllServingTypes
+	 */
+	public function	getAllServingTypes() {		
+	
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+
+		// From the recipe units table
+		$query->select('*');
+		$query->from('#__yoorecipe_serving_types');
+		
+		$db->setQuery($query);
+		return $db->loadObjectList();
+	}
+	
+	/**
+	* truncateServingTypes
+	*/
+	public function truncateServingTypes() {
+	
+		$db		= JFactory::getDBO();
+		$query	= "TRUNCATE `#__yoorecipe_serving_types`;";
+		$db->setQuery($query);
+		return $db->execute();
+	}
+}

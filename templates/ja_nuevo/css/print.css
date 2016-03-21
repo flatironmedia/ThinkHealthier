@@ -1,0 +1,93 @@
+@media print {
+
+	.com_content.view-article .article-header h1, 
+	div.itemView .itemTitle {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.article-image-full.item-image img,
+	.img-responsive,
+	span.itemImage img {
+		width: 100%;
+		height: 470px !important;
+	}
+
+	.video-container, .btn-group, .pagenav {
+		display: none;
+	}
+
+	a:after {
+		content:" ("attr(href)")";
+   		display: none !important;
+	}
+
+	a:after {
+	    content: " (" attr(href) ")";
+	    display: none !important;
+	}
+
+	p {
+		text-align: justify;
+	} 
+
+	#t3-footer, 
+	#disqus_thread,
+	#t3-header,
+	#disqus_thread,
+	#back-to-top,
+	.t3-navhelper,
+	.t3-sidebar, 
+	.t3-topbar, 
+	.t3-topbanner,
+	.t3-bottombanner, 
+	.t3-bottomslider,
+	.t3-content-top,
+	.itemSocialSharing,
+	.itemLinks,
+	.itemAuthorBlock,
+	.itemAuthorLatest,
+	.itemNavigation,
+	.itemComments,
+	.itemBackToTop,
+	.itemToolbar,
+	.itemRatingBlock,
+	.t3-masthead,
+	.article-aside,
+	.content_rating,
+	.item-masthead-content,
+	.dq-powered,
+	.article-footer,
+	.article-aside,
+	.itemRelated,
+	.itemContentFooter,
+	.itemHeader,
+	aside.article-aside.clearfix,
+	form {
+		display: none;
+	}
+
+	.logo-image {
+		margin-bottom: 30px;
+		position: inherit;
+		left: 10px;
+	}
+
+	.logo-image a,
+	.logo-image a img {
+		display: block;
+	}
+
+	.logo-image span {
+		display: none;
+	}
+
+	.container,
+	.t3-topbanner .container {
+		border: 0;
+	}
+
+	.t3-content {
+		width: 100%
+	}
+}

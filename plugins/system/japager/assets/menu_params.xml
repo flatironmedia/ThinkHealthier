@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+		<fields name="params">
+			<fieldset name="menu-jawall" label="JAWALL_LABEL" description="JAWALL_DESC">
+				<field name="jawall_preview" type="list" default="" label="JAWALL_POPUP_LABEL" description="JAWALL_POPUP_DESC">
+					<option value="">Use Global</option>
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</field>
+				<field name="jawall_basegrid" type="list" default="" label="JAWALL_BASEGRID_LABEL" description="JAWALL_BASEGRID_DESC">
+					<option value="">Use Global</option>
+					<option value="s">Small</option>
+					<option value="m">Medium</option>
+					<option value="l">Large</option>
+					<option value="xl">Extra Large</option>
+				</field>
+				<field name="jawall_display" type="list" default="" label="JAWALL_DISPLAY_LABEL" description="JAWALL_DISPLAY_DESC">
+					<option value="">Use Global</option>
+					<option value="fullview">Full View</option>
+					<option value="imageview">Image View</option>
+				</field>
+			</fieldset>			
+		</fields>
+</form>

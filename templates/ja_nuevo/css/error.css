@@ -1,0 +1,124 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Nuevo Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+/* Body Style */
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+}
+
+.error {
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -300px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 600px
+}
+/* Error code */
+.error-code {
+	animation: offline 1.5s;
+	color: #a3becc;
+	font-family: arial;
+	font-size: 200px;
+}
+
+/* Error message */
+.error-message h2 {
+	animation: offline 1.8s;
+	color: #406a80;
+	font-weight: 300;
+	font-size: 36px;
+	margin-bottom: 0px;
+	margin-top: 12px;
+}
+
+/* Error box */
+#errorboxbody {
+	animation: offline 1.9s;
+	color: #7a8f99;
+	font-weight: 400;
+}
+
+#errorboxbody p {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+/* button home */
+.button-home {
+	animation: offline 1.8s;
+	display: inline-block;
+	color: #73bfe6;
+	padding: 8px 20px;
+	border: 2px solid #73bfe6;
+	border-radius: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.button-home:hover,
+.button-home:active,
+.button-home:focus {
+	border-color: #48abde;
+	color: #48abde;
+}
+
+/*Animation*/
+@keyframes offline {
+	0% {transform: translateY(120px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+
+@-webkit-keyframes offline {
+	0% {transform: translateY(120px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+
+@-o-keyframes offline {
+	0% {transform: translateY(120px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+
+@-moz-@keyframes offline {
+	0% {transform: translateY(120px); opacity: 0;}
+	100% {transform: translateY(0px); opacity: 1;}
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+	.error-code {
+		font-size: 180px;
+	}
+
+	.error {
+		position: relative;
+		height: auto;
+		left: 0;
+		margin: auto;
+		padding-top: 50px;
+		top: 0;
+		width: auto;
+	}
+
+	.error-message h2 {
+		font-size: 22px;
+	}
+}
