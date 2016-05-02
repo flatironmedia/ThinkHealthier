@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    
+    <field
+      name="id"
+      type="text"
+      default="0"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_ID"
+      readonly="true"
+      class="readonly"
+      description="JGLOBAL_FIELD_ID_DESC"/> 
+    
+    <field
+      name="created_by"
+      type="createdby"
+      default=""
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_CREATED_BY"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_CREATED_BY"/> 
+    
+    <field
+      name="modified_by"
+      type="modifiedby"
+      default=""
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_MODIFIED_BY"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_MODIFIED_BY"/> 
+    
+    <field
+      name="date"
+      type="calendar"
+      class="inputbox"
+      required="true"
+      format="%m/%d/%Y"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_DATE"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_DATE"
+      filter="safehtml"/> 
+    
+    <field
+      name="subject"
+      type="text"
+      class="span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_SUBJECT"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_SUBJECT"
+      required="true"
+      maxlength="255"/> 
+    
+    <field
+      name="featured_article_name"
+      type="text"
+      readonly="true"
+      class="inputbox span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_FEATURED_ARTICLE"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_FEATURED_ARTICLE"
+      filter="safehtml"/> 
+
+    <field name="ftrdArticleID" type="hidden" default="0" readonly="true" />
+    
+    <field
+      name="featured_recipe_name"
+      type="text"
+      readonly="true"
+      size="40"
+      class="inputbox span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_FEATURED_RECIPE"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_FEATURED_RECIPE"
+      filter="safehtml"/> 
+
+    <field name="ftrdRecipeID" type="hidden" default="0" readonly="true" />
+    
+    <field
+      name="article2_name"
+      type="text"
+      readonly="true"
+      class="inputbox span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_ARTICLE2"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_ARTICLE2"
+      filter="safehtml"/> 
+
+    <field name="article1ID" type="hidden" default="0" readonly="true" />
+    
+    <field
+      name="article3_name"
+      type="text"
+      readonly="true"
+      size="40"
+      class="inputbox span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_ARTICLE3"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_ARTICLE3"
+      filter="safehtml"/> 
+
+    <field name="article2ID" type="hidden" default="0" readonly="true" />
+    
+    <field
+      name="article4_name"
+      type="text"
+      readonly="true"
+      size="40"
+      class="inputbox span6"
+      label="COM_NEWSLETTER_FORM_LBL_NEWSLETTER_ARTICLE4"
+      description="COM_NEWSLETTER_FORM_DESC_NEWSLETTER_ARTICLE4"
+      filter="safehtml"/> 
+
+    <field name="article3ID" type="hidden" default="0" readonly="true" />
+
+  </fieldset>
+
+</form>
