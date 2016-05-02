@@ -66,15 +66,21 @@ global $articleCounter3;
 if (empty($articleCounter2)) $articleCounter2 = 0;
 if ($articleCounter2 > 19) $articleCounter2 = 0;
 
-
+$SLIR = "slir/w300-h200/";
 $blockType = "";
 if (! empty($gridTemplate)) {
           $spec_type = 'type'.$articleCounter2;
 
-          if ($gridTemplate[0]->$spec_type == 2) $blockType = 'grid-item--width2';
+          if ($gridTemplate[0]->$spec_type == 2) {
+          	$blockType = 'grid-item--width2';
+          	$SLIR = "slir/w621-h414/";
+          }
           echo '<div class="grid-item item inf-item '.$blockType.' '.$grid.'">';
         }
 else echo '<div class="grid-item item inf-item '.$grid.'">';
+
+if ($_SESSION['is_mobile']) $SLIR = "";
+
 $articleCounter2++;
 
 $db    = JFactory::getDbo();
@@ -114,7 +120,7 @@ unset($altData);
 						<?php if ($images->image_fulltext_caption):
 							echo 'class="caption"' . ' title="' . htmlspecialchars($images->image_fulltext_caption) . '"';
 						endif; ?>
-						src="<?php echo htmlspecialchars($images->image_fulltext); ?>"
+						src="<?php echo htmlspecialchars($SLIR.$images->image_fulltext); ?>"
 						alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
 						</a>
 						<div class="title-cat-wrap">
@@ -142,7 +148,7 @@ unset($altData);
                 <?php else:  ?>
 				    <div>
 				    	<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid)); ?>">
-		                      <img src="<?php echo JURI::root(true);?>/images/default_image.jpg" alt="Think Healthier - Image coming soon"/>
+		                      <img src="<?php echo JURI::root(true);?><?php echo $SLIR;?>/images/default_image.jpg" alt="Think Healthier - Image coming soon"/>
 				      	</a>
 						<div class="title-cat-wrap">
 						<a class="category" href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($this->item->id, $this->item->catid)); ?>">

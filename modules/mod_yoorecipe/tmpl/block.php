@@ -50,7 +50,7 @@ foreach ($items as $i => $item) {
 		<?php  if ($show_recipes_picture) { ?>
 			<div class="feat-recipe-item">
 			<a href="<?php echo JRoute::_(JHtml::_('yoorecipehelperroute.getreciperoute', $item->slug, $catid = 0, $menu_item_id)); ?>">
-				<img class="thumbnail" src="<?php echo $picture_path; ?>"
+				<img class="thumbnail" src="<?php echo '/slir/w303-h202/'.$picture_path; ?>"
 				title="<?php echo htmlspecialchars($item->title); ?>"
 				alt="<?php echo htmlspecialchars($item->title);  ?>"
 				/>

@@ -35,6 +35,10 @@ elseif(JFactory::getApplication()->input->get('option', '', 'STRING') == 'com_yo
 	$sidebar1 = 'sidebar-1';
 	$sidebar2 = 'sidebar-2';
 }
+elseif(JFactory::getApplication()->input->get('option', '', 'STRING') == 'com_content' && (JFactory::getApplication()->input->get('view', '', 'STRING') == 'healthaz' || JFactory::getApplication()->input->get('view', '', 'STRING') == 'azalphabet')){
+	$sidebar1 = false;
+	$sidebar2 = 'sidebar-2';
+}
 
 // detect layout
 if ($sidebar1 && $sidebar2) {

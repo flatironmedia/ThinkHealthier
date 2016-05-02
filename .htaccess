@@ -3,6 +3,13 @@
 # AuthName "Think Healthier Development site"
 # Require user thinkhealthierdev alain
 
+## Browser Cache Control - improves loading time - Zeljko inserted
+<FilesMatch "\.(js|css|ico|jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+Header append Vary Accept-Encoding
+## End Browser Cache Control
+
 ##
 # @package    Joomla
 # @copyright  Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.
@@ -35,6 +42,8 @@ Options -Indexes
 RewriteEngine On
 
 RewriteRule ^component/content/article/\d+-(.+) /$1 [R,L]
+
+RewriteRule ^health-az/az-alphabet/\d+-(.+) /health-az/$1 [R,L]
 
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below

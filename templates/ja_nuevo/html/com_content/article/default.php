@@ -22,15 +22,6 @@ JHtml::_('behavior.caption');
 ?>
 
 <div class="article-icons-wrapper">
-<!-- Article Sharing icons OGO Sense -->
-<!-- <div class="sharing-icons">
-	<span class='st_facebook_large' displayText='Facebook'></span>
-	<span class='st_twitter_large' displayText='Tweet'></span>
-	<span class='st_pinterest_large' displayText='Pinterest'></span>
-	<span class='st_sharethis_large' displayText='ShareThis'></span>
-</div> -->
-<!-- Article Sharing icons OGO Sense -->
-
 <!-- Article Icons OGO Sense -->
 <?php if (!$this->print) : ?>
 	<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
@@ -43,7 +34,6 @@ JHtml::_('behavior.caption');
 		</div>
 	<?php endif; ?>
 <?php endif; ?>
-<!-- End of Article Icons OGO Sense -->
 </div>
 
 <div class="item-page<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Article">
@@ -112,7 +102,7 @@ JHtml::_('behavior.caption');
 	<?php if ($images->image_fulltext_caption):
 		echo 'class="caption"' . ' title="' . htmlspecialchars($images->image_fulltext_caption) . '"';
 	endif; ?>
-	src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>" itemprop="image"/> </div>
+	src="/slir/w600-h400/<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>" itemprop="image"/> </div>
 	<?php endif; ?>
 	<?php
 	if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->paginationposition && !$this->item->paginationrelative):

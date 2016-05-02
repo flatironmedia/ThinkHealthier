@@ -12,14 +12,14 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = '10.10.10.186';
+	public $host = 'localhost';
 	public $user = 'mdm3jomla';
 	public $password = 'horsetrainfRANCEqueen';
 	public $db = 'THCMS';
 	public $dbprefix = 'ip8jd_';
 	public $live_site = '';
 	public $secret = '9csfhZgADgp5Kkuw';
-	public $gzip = '1';
+	public $gzip = '0';
 	public $error_reporting = 'none';
 	public $helpurl = 'https://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '';
@@ -46,7 +46,7 @@ class JConfig {
 	public $MetaDesc = '';
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
-	public $MetaAuthor = '1';
+	public $MetaAuthor = '0';
 	public $MetaVersion = '0';
 	public $robots = '';
 	public $sef = '1';
@@ -55,7 +55,7 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $log_path = './log';
-	public $tmp_path = './tmp';
+	public $tmp_path = '/usr/local/www/www.thinkhealthier.com/tmp';
 	public $lifetime = '90';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';

@@ -31,7 +31,7 @@ if ($recipe->featured) {
 	$html[] = '<span class="recipe-featured"><i class="icon-star"></i></span>';
 }
 
-$image_html = '<img src="'.JURI::root().$picture_path.'" alt="'.htmlspecialchars($recipe->title).'" title="'.htmlspecialchars($recipe->title).'" />';
+$image_html = '<img src="'.JURI::root().'slir/w303-h202/'.$picture_path.'" alt="'.htmlspecialchars($recipe->title).'" title="'.htmlspecialchars($recipe->title).'" />';
 if ($blog_is_picture_clickable) {
 	$image_html = '<a href="'.$url.'">'.$image_html.'</a>';
 }
