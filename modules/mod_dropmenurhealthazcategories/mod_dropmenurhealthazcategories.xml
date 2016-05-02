@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.1" client="site" method="upgrade">
+    <name>Drop Menu Health A-Z Categories</name>
+    <author>Xander@OGOSense</author>
+    <version>3.4.0</version>
+    <description>Displays Health A-Z categories in a drop down menu</description>
+    <files>
+        <filename>mod_dropmenurhealthazcategories.xml</filename>
+        <filename module="mod_dropmenurhealthazcategories">mod_dropmenurhealthazcategories.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>
