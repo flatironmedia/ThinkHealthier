@@ -1,3 +1,393 @@
+/* Masthead sharing icons */
+.t3-masthead .sharing-icons {
+    width: auto;
+    float: right;
+    padding: 17px 0;
+}
+.sharing-icons span.at-icon-wrapper, 
+.sharing-icons span.at_PinItButton,
+.sharing-icons .addthis_counter a.atc_s {
+	width: 57px !important;
+    height: 25px !important;
+}
+.sharing-icons .addthis_button_facebook > span > svg,
+.sharing-icons .addthis_button_twitter > span > svg {
+    display: none;
+}
+.sharing-icons .addthis_button_facebook > span {
+    background: url('../images/fb-share.png') no-repeat!important;
+}
+.sharing-icons .addthis_button_twitter > span {
+    background: url('../images/tw-share.png') no-repeat!important;
+}
+.sharing-icons .addthis_button_pinterest_pinit > span {
+     background: url('../images/pin-share.png') no-repeat!important;
+}
+.sharing-icons .addthis_counter.addthis_pill_style {
+	height: auto;
+	margin-left: 2px;
+}
+.sharing-icons .addthis_counter a.atc_s {
+    background: url('../images/other-share.png') no-repeat!important;
+}
+
+.sharing-icons .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded {
+	display: none !important;
+}
+
+/* Healthy Recipes CSS by Dragan */
+.mod-drop-menu-recipe-categories-first-row {
+	width: 100%;
+	max-width: 213px;
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+}
+
+.mod-drop-menu-recipe-categories-second-row {
+	width: 100%;
+	max-width: 250px;
+	display: inline-block;
+}
+
+.mod-drop-menu-recipe-categories-first-row > a,
+.mod-drop-menu-recipe-categories-second-row > a {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: none;
+	padding: 4px 0;
+	color: #53918C;
+	display: block;
+}
+
+.mod-drop-menu-recipe-categories-first-row > a:hover,
+.mod-drop-menu-recipe-categories-first-row > a:focus,
+.mod-drop-menu-recipe-categories-first-row > a:active,
+.mod-drop-menu-recipe-categories-second-row > a:hover, 
+.mod-drop-menu-recipe-categories-second-row > a:focus, 
+.mod-drop-menu-recipe-categories-second-row > a:active {
+	color: #60bca6;
+}
+
+/* Health AZ & AZ Alphabet */
+
+.view-healthaz .t3-mainbody,
+.view-azalphabet .t3-mainbody {
+    background: #f2f2f2;
+    clear: both;
+    margin-top: 20px;
+}
+
+.view-healthaz .t3-mainbody .t3-content,
+.view-azalphabet .t3-mainbody .t3-content {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.healthaz-label-heading,
+.azalphabet-label-heading {
+	background-color: #fff;
+	padding: 20px 25px;
+}
+
+.healthaz-label-heading .healthaz-text,
+.azalphabet-label-heading .azalphabet-text {
+	float: left;
+	font-size: 15px;
+	display: inline-block;
+	width: 100%;
+	max-width: 720px;
+	padding: 10px 0px;
+}
+
+.healthaz-label-heading .healthaz-adam-img,
+.azalphabet-label-heading .azalphabet-adam-img {
+	display: inline-block;
+	width: 100%;
+	max-width: 150px;
+	border-left: 1px solid #e3e3e3;
+	margin-left: 20px;
+	padding: 5px 0px 5px 20px;
+}
+
+.healthaz-categories-all {
+	background-color: #fff;
+	padding: 10px;
+	float: left;
+	margin-top: 10px;
+	padding-right: 0px;
+}
+
+.healthaz-categories-all h4 {
+	color: #444450;
+	font-size: 24px;
+	margin: 5px 0px 20px;
+}
+
+.healthaz-categories-all .healthaz-category {
+	width: 100%;
+	float: left;
+	max-width: 303px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	vertical-align: top;
+	background-color: #e7e7e7;
+}
+
+.healthaz-category .healthaz-category-title {
+	background: #39645a;
+	padding: 4px 10px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.healthaz-category .healthaz-category-title::before {
+	content: "";
+	border: 17.5px solid transparent;
+	border-bottom: 15px solid #39645a;
+	margin-top: -35px;
+	margin-left: 5px;
+	position: absolute;
+}
+
+.healthaz-category .healthaz-article-most-viewed {
+	color: #454e4c;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+
+.healthaz-content-without-title {
+	padding: 15px 20px 20px 20px;
+}
+
+.healthaz-content-without-title .healthaz-article-title > a {
+	color: #39645a;
+	font-size: 16px;
+}
+
+.healthaz-content-without-title .healthaz-article-title > a:hover {
+	color: #60bca6;
+}
+
+.view-azalphabet .azalphabet-letters {
+	clear: both;
+	border-top: 1px solid #e3e3e3;
+	padding-top: 25px;
+	margin-top: 15px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+
+.view-azalphabet span.azalphabet-letter {
+	padding: 0px 9.5px;
+	float: left;
+	border-left: 1px solid #7a7a7a;
+	line-height: 1.5;
+}
+
+.view-azalphabet span.azalphabet-letter:first-child {
+	border-left: none;
+}
+
+.view-azalphabet span.azalphabet-letter > a {
+	color: #333;
+	font-size: 21px;
+	line-height: 1;
+}
+
+.view-azalphabet span.azalphabet-letter > a:hover {
+	color: #999 !important;
+}
+
+.view-azalphabet .azalphabet-most-viewed {
+	background-color: #fff;
+	padding: 20px 10px 30px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.view-azalphabet .azalphabet-most-viewed > h2 {
+	color: #62bda7;
+	font-weight: 600;
+	margin-top: 0px;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+
+.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article {
+	max-width: 215px;
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 5px 15px;
+	margin-right: 45px;
+}
+
+.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article > a {
+	font-size: 20px;
+	color: #63857d;
+	font-weight: 400;
+}
+
+.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article > a:hover {
+	color: #62bda7;
+}
+
+.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
+	border-bottom: none;
+}
+
+.view-azalphabet .azalphabet-letter-result {
+	background-color: #fff;
+	padding: 20px 10px 35px;
+	margin-top: 10px;
+}
+
+.view-azalphabet .azalphabet-letter-result > h3 {
+	font-size: 42px;
+	font-weight: 600;
+	color: #454e4c;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article {
+	max-width: 215px;
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 5px 15px 7px;
+	margin-right: 45px;
+}
+
+.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3) {
+	border-bottom: none;
+}
+
+.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article > a {
+	color: #63857d;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.view-article .module.health-at-risk {
+	display: none;
+}
+
+.view-healthaz .fb-side-module,
+.view-azalphabet .fb-side-module {
+	display: none;
+}
+
+@media screen and (max-width: 1279px) {
+	.healthaz-label-heading .healthaz-adam-img,
+	.azalphabet-label-heading .azalphabet-adam-img {
+    	border-left: 0px none;
+		padding: 0px;
+		margin: 20px auto;
+		text-align: center;
+		max-width: 100%;
+    }
+    .healthaz-categories-all .healthaz-category img {
+    	width: 100%;
+    }
+    
+    .view-azalphabet .azalphabet-letters {
+    	margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+    }
+    .view-azalphabet span.azalphabet-letter {
+    	margin-bottom: 15px;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
+    	border-bottom: 1px solid #e3e3e3;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+2),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+2) {
+		border-bottom: none !important;
+	}
+}
+
+@media all and (max-width: 1279px) and (min-width: 939px) {
+    .healthaz-categories-all {
+    	padding-right: 10px;
+		float: none;
+    }
+    .healthaz-categories-all .healthaz-category {
+    	max-width: none;
+    	float: none;
+    }
+}
+
+@media all and (max-width: 939px) {
+	.view-healthaz .t3-content.col-xs-12.col-sm-8.col-md-9 {
+		padding-right: 10px;
+	}
+	.healthaz-categories-all .healthaz-category {
+		max-width: 48.49%;
+	}
+	.healthaz-categories-all :nth-child(even):not(:first-child) {
+		clear: both;
+	}
+	.view-healthaz .article-bottom {
+		float: left;
+	}
+	.view-healthaz .t3-sidebar-right,
+	.view-azalphabet .t3-sidebar-right {
+		margin: 0px auto;
+		float: none;
+		clear: both;
+	}
+}
+
+@media all and (max-width: 691px) {
+	.healthaz-categories-all {
+		padding-right: 10px;
+	}
+	.healthaz-categories-all .healthaz-category {
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article {
+		margin-right: auto;
+		max-width: 320px;
+	}
+	.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
+    	border-bottom: 1px solid #e3e3e3 !important;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:last-child,
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:last-child {
+    	border-bottom: none !important;
+    }
+}
+
 /* Custom CSS by Dunya  */
 
 @media screen and (max-width: 1279px) {
@@ -1253,31 +1643,6 @@ a#toggle-footer {
 .ja-masonry-wrap #infinity-next {
     display: none!important;
 }
-.t3-masthead .sharing-icons {
-    width: auto;
-    float: right;
-    padding: 17px 0;
-}
-.sharing-icons .st_facebook_large .stLarge {
-    width: 57px;
-    height: 25px;
-    background: url(../images/fb-share.png) no-repeat!important;
-}
-.sharing-icons .st_twitter_large .stLarge {
-    width: 57px;
-    height: 25px;
-    background: url(../images/tw-share.png) no-repeat!important;
-}
-.sharing-icons .st_pinterest_large .stLarge {
-    width: 57px;
-    height: 25px;
-    background: url(../images/pin-share.png) no-repeat!important;
-}
-.sharing-icons .st_sharethis_large .stLarge {
-    width: 57px;
-    height: 25px;
-    background: url(../images/other-share.png) no-repeat!important;
-}
 .t3-masthead .jamasshead-title {
     width: auto;
     float: left;
@@ -1382,16 +1747,68 @@ a#toggle-footer {
 .view-recipe #t3-content, .view-article #t3-content { margin-bottom: 10px!important;}
 /* //////////// YOORECIPE CSS */
 
-
+/* Responsive view fix */
 @media (max-width: 1279px) {
+	nav#t3-mainnav > .navbar-default.t3-mainnav.container > .t3-navbar {
+		max-width: 939px;
+	}
+	.t3-mainnav .t3-navbar .navbar-nav {
+		margin: 0px;
+	}
+	.t3-mainnav .t3-navbar .navbar-nav > li {
+		float: left;
+	}
+	nav .t3-mainnav .t3-navbar .navbar-nav > li > a {
+		padding: 9px 40px;
+	}
+	.navbar-nav > li > .dropdown-menu .mega-dropdown-inner {
+		width: 940px !important;
+	}
+	.navbar-nav > li > .dropdown-menu .mega-dropdown-inner .col-xs-6.mega-col-module:first-child {
+		width: 62% !important;
+		min-width: 62% !important;
+	}
+	.navbar-nav > li > .dropdown-menu .mega-dropdown-inner .col-xs-6.mega-col-module:last-child {
+		width: 38% !important;
+		min-width: 38% !important;
+	}
+	.navbar-nav > li > .dropdown-menu .mega-dropdown-inner .col-xs-2.mega-col-nav {
+		width: 19% !important;
+		min-width: 19% !important;
+	}
+	.t3-megamenu .menu-module-articles .item:first-child, .t3-megamenu .menu-module-articles .item:first-child {
+		margin-left: 0px;
+	}
+	.mod-drop-menu-recipe-categories-first-row {
+    	max-width: 180px;
+    	padding-left: 0px;
+    }
+    .mod-drop-menu-recipe-categories-second-row {
+    	max-width: 175px;
+    	padding-left: 10px;
+    }
+}
+
+@media (max-width: 958px) {
   .t3-header #right-mods { display: none;}
   #t3-header .logo { padding-bottom: 25px; padding-top: 25px;}
 }
 
-@media (min-width: 1280px) {
-.t3-header .container .pull-right {display:none;}
-#right-mods .pull-right {display:block;}
+@media (min-width: 959px) {
+	.t3-header .container .pull-right {
+		display:none;
+	}
+	#right-mods .pull-right {
+		display:block;
+	}
+	#t3-mainnav .navbar-collapse.collapse {
+	    display: block !important;
+	    height: auto !important;
+	    padding-bottom: 0;
+	    overflow: visible !important;
+  	}
 }
+
 @media (max-width: 470px) {
  	.logo-img {max-width: 220px;}
  	#t3-header .logo {

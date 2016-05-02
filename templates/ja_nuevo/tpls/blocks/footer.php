@@ -73,3 +73,7 @@ if (!$sitename) {
   window._taboola = window._taboola || [];
   _taboola.push({flush: true});
 </script>
+
+
+<script type="text/javascript" src="http://flatiron-d.openx.net/w/1.0/jstag"></script>
+
