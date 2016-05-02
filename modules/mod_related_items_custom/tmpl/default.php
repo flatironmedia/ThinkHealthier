@@ -22,7 +22,7 @@ function get_words($sentence, $count = 10) {
 	<a href="<?php echo $item->route; ?>">
 		<div class="related-left-block">
 			<img
-				src="<?php echo htmlspecialchars($item->images->image_fulltext); ?>"
+				src="/slir/w125-h75/<?php echo htmlspecialchars($item->images->image_fulltext); ?>"
 				alt="<?php echo htmlspecialchars($item->images->image_fulltext_alt); ?>"
 			/>
 		</div>
@@ -31,9 +31,9 @@ function get_words($sentence, $count = 10) {
 				<?php if ($showDate) echo JHtml::_('date', $item->created, JText::_('DATE_FORMAT_LC4')) . " - "; ?>
 				<?php echo $item->title; ?>
 			</div>
-			<div class="related-article-text">
+			<!-- <div class="related-article-text">
 				<?php echo get_words(strip_tags($item->introtext)); ?>
-			</div>
+			</div> -->
 		</div>
 
 	</a>

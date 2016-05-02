@@ -8,12 +8,12 @@ defined('_JEXEC') or die('Restricted accessd');
 //echo('<pre>'.print_r($articles, true).'</pre>');
 //$article = $articles[0];
 foreach ($articles as $key => $article) {
-	$images = json_decode($article->images);
-	$image = "";
-	if (isset($images->image_intro) and !empty($images->image_intro)) $image = $images->image_intro;
-	else if (isset($images->image_fulltext) and !empty($images->image_fulltext)) $image = $images->image_fulltext;
-	else $image = "images/default_image.jpg";
-	//echo('<pre>'.print_r($images, true).'</pre>');
+    $images = json_decode($article->images);
+    $image = "";
+    if (isset($images->image_intro) and !empty($images->image_intro)) $image = $images->image_intro;
+    else if (isset($images->image_fulltext) and !empty($images->image_fulltext)) $image = $images->image_fulltext;
+    else $image = "images/default_image.jpg";
+    //echo('<pre>'.print_r($images, true).'</pre>');
 ?>
 
 
@@ -22,9 +22,17 @@ foreach ($articles as $key => $article) {
 
        
 
-        <a href="<?php echo 'index.php?option=com_content&view=article&id='.$article->id.'&catid='.$article->category_id; ?>" target="_self">
+        <a href="<?php
+              require_once (JPATH_SITE . '/components/com_content/helpers/route.php');
+            if(class_exists ("ContentHelperRoute"))
+            {
+               $url =  JRoute::_(ContentHelperRoute::getArticleRoute($article->id.':'.$article->alias, $article->catid, ''));
+               
+            }
+                    
+                    echo $url; ?>" target="_self">
 
-        <img class="top" src="<?php echo htmlspecialchars($image); ?>" alt="image">
+        <img class="top" src="<?php echo '/slir/w183-h122/'.htmlspecialchars($image); ?>" alt="image">
         
 
 
@@ -37,7 +45,7 @@ foreach ($articles as $key => $article) {
 
 
         <div class="xs_intro">
-        	<?php //echo strip_tags($article->introtext); 
+            <?php //echo strip_tags($article->introtext); 
             $article_desc = strip_tags($article->introtext);
             $article_desc = str_replace("\n", "", $article_desc);
             $article_desc = str_replace("\r", "", $article_desc);

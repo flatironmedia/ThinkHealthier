@@ -14,7 +14,7 @@ require_once dirname(__FILE__) . '/helper.php';
 
 
 $articles = ModDropMenuArticlesHelper::getArticles($params);
-require JModuleHelper::getLayoutPath('mod_dropmenuarticles');
+require JModuleHelper::getLayoutPath('mod_dropmenuarticles', $params->get('layout', 'default'));
 
 //echo('<pre>'.print_r($articles, true).'</pre>');
 

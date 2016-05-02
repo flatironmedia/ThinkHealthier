@@ -223,7 +223,7 @@ abstract class JHtmlYooRecipeUtils
 			if ($show_sub_categories_picture) {
 				$picture_path = $params->get('image', 'media/com_yoorecipe/images/no-image.jpg');
 				$picture_path = JHtml::_('imageutils.getPicturePath', $picture_path);
-				$html[] = '<a href="'.$cat_url.'"><img class="thumbnail" src="'.$picture_path.'" alt="'.$category->title.'"/></a>';
+				$html[] = '<a href="'.$cat_url.'"><img class="thumbnail" src="/slir/w303-h202/'.$picture_path.'" alt="'.$category->title.'"/></a>';
 			}
 			$html[] = '<div></div>';
 			$html[] = '<div class="cat-title"><i class="cat-title-triangle"></i><a href="'.$cat_url.'">'.$category->title.'</a>&nbsp;('.$category->nb_recipes.')</div>';

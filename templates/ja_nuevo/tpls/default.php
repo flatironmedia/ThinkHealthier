@@ -27,6 +27,7 @@ endif;
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" class='<jdoc:include type="pageclass" /> <?php echo $noneResponsive; ?>'>
 
 <head>
+<?php JFactory::getDocument()->setGenerator('ThinkHealthier'); ?>
 	<jdoc:include type="head" />
 	<?php $this->loadBlock('head') ?>
   <?php $this->addCss('layouts/docs') ?>

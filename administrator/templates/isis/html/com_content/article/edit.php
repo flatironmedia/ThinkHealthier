@@ -94,7 +94,7 @@ JFactory::getDocument()->addScriptDeclaration('
 					//caling com_altarticledata component for setting alternative title and intro
 			        if (empty($this->item->id)) echo('<pre>'.print_r('Save article to add alternative data', true).'</pre>');
 			        else {
-						echo '<a class="btn modal-button" title="Alt Data" href="index.php?option=com_altarticledata&view=data&layout=edit&tmpl=component&article_id='.$this->item->id.'&article_title='.urlencode($this->item->title).'&new=1" rel="{handler: \'iframe\', size: {x: 600, y: 550}}">
+						echo '<a class="btn modal" title="Alt Data" href="index.php?option=com_altarticledata&view=data&layout=edit&tmpl=component&article_id='.$this->item->id.'&article_title='.urlencode($this->item->title).'&new=1" rel="{handler: \'iframe\', size: {x: 600, y: 550}}">
 							<span class="icon-file-add"></span>Alt Data</a>';
 			        }
 				?>
