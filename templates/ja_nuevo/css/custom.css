@@ -159,9 +159,9 @@ form.chronoform ul.contact-info-list > li {
 /* END of Alternative intro text boxes */
 
 /* Article Social Sharing Icons */
-
 .item-page .joomla_add_this .addthis_button_facebook span,
-.com_yoorecipe .joomla_add_this .addthis_button_facebook span {
+.com_yoorecipe .joomla_add_this .addthis_button_facebook span,
+.view-article.health-news .joomla_add_this .addthis_button_facebook span {
 	background: url('../images/article-share/fb-share.png') no-repeat;
 	background-color: transparent !important;
 	width: 81px !important;
@@ -172,13 +172,16 @@ form.chronoform ul.contact-info-list > li {
 
 .item-page .joomla_add_this .addthis_button_facebook span svg,
 .com_yoorecipe .joomla_add_this .addthis_button_facebook span svg,
+.view-article.health-news .joomla_add_this .addthis_button_facebook span svg,
 .item-page .joomla_add_this .addthis_button_twitter span svg,
-.com_yoorecipe .joomla_add_this .addthis_button_twitter span svg {
+.com_yoorecipe .joomla_add_this .addthis_button_twitter span svg,
+.view-article.health-news .joomla_add_this .addthis_button_twitter span svg {
 	display: none;
 }
 
 .item-page .joomla_add_this .addthis_button_twitter span,
-.com_yoorecipe .joomla_add_this .addthis_button_twitter span {
+.com_yoorecipe .joomla_add_this .addthis_button_twitter span,
+.view-article.health-news .joomla_add_this .addthis_button_twitter span {
 	background: url('../images/article-share/tw-share.png') no-repeat;
 	background-color: transparent !important;
 	width: 81px !important;
@@ -188,7 +191,8 @@ form.chronoform ul.contact-info-list > li {
 }
 
 .item-page .joomla_add_this .at_PinItButton,
-.com_yoorecipe .joomla_add_this .at_PinItButton {
+.com_yoorecipe .joomla_add_this .at_PinItButton,
+.view-article.health-news .joomla_add_this .at_PinItButton {
 	background: url('../images/article-share/pin-share.png') no-repeat;
 	background-color: transparent !important;
 	width: 81px !important;
@@ -198,7 +202,8 @@ form.chronoform ul.contact-info-list > li {
 }
 
 .item-page .joomla_add_this .atc_s.addthis_button_compact,
-.com_yoorecipe .joomla_add_this .atc_s.addthis_button_compact {
+.com_yoorecipe .joomla_add_this .atc_s.addthis_button_compact,
+.view-article.health-news .joomla_add_this .atc_s.addthis_button_compact {
 	background: url('../images/article-share/other-share.png') no-repeat;
 	background-color: transparent !important;
 	width: 81px !important;
@@ -214,18 +219,16 @@ form.chronoform ul.contact-info-list > li {
 }
 
 .item-page .addthis_counter.addthis_pill_style,
-.com_yoorecipe .addthis_counter.addthis_pill_style {
+.com_yoorecipe .addthis_counter.addthis_pill_style,
+.view-article.health-news .addthis_counter.addthis_pill_style {
 	height: auto !important;
 }
 
 .item-page .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded,
-.com_yoorecipe .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded {
+.com_yoorecipe .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded,
+.view-article.health-news .addthis_counter.addthis_pill_style.addthis_nonzero a.addthis_button_expanded {
 	display: none !important;
 }
-
-/* .view-article #at20mc #at15s {
-	top: 543px !important;
-} */
 
 .com_yoorecipe #at20mc #at15s {
 	top: 383px !important;
@@ -237,7 +240,8 @@ form.chronoform ul.contact-info-list > li {
 }
 
 .item-page .addthis_default_style .at300b,
-.com_yoorecipe .addthis_default_style .at300b {
+.com_yoorecipe .addthis_default_style .at300b,
+.view-article.health-news .addthis_default_style .at300b {
 	padding: 0;
 }
 
@@ -282,4 +286,4 @@ form.chronoform ul.contact-info-list > li {
 }
 
 
-/* End of Module Realted Articles */
+/* End of Module Realted Articles 

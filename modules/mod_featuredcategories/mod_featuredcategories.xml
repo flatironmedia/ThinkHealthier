@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Featured Categories</name>
+    <author>Ace Udovicic | OGOSense</author>
+    <version>1.0.0</version>
+    <description>Module for filtering Health News articles based on tags.</description>
+    <files>
+        <filename>mod_featuredcategories.xml</filename>
+        <filename module="mod_featuredcategories">mod_featuredcategories.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+
+
+    <config>
+
+
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="categories" type="sql" label="Categories" description="" query='SELECT id,title FROM `#__tags` WHERE alias like "h-news-tag%"' key_field="id" value_field="title"  required="true" multiple="multiple" /> 
+            </fieldset>
+        </fields>
+
+
+    </config>
+
+
+</extension>

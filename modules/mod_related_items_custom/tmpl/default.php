@@ -22,7 +22,12 @@ function get_words($sentence, $count = 10) {
 	<a href="<?php echo $item->route; ?>">
 		<div class="related-left-block">
 			<img
-				src="/slir/w125-h75/<?php echo htmlspecialchars($item->images->image_fulltext); ?>"
+				<?php 
+					// audovicic@ogosense.com: setting different behaviour for external images
+					if (strpos($item->images->image_fulltext, 'http') !== false) $src = $item->images->image_fulltext;
+					else $src = "/slir/w125-h75/".htmlspecialchars($item->images->image_fulltext);
+				?>
+				src="<?php echo $src; ?>"
 				alt="<?php echo htmlspecialchars($item->images->image_fulltext_alt); ?>"
 			/>
 		</div>

@@ -1,3 +1,424 @@
+/* Health News */
+/* Pagination */
+.view-healthnews.layout-blog .pagination {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.view-healthnews.layout-blog .pagination > * {
+	display: inline-block;
+}
+
+.view-healthnews.layout-blog .pagination .previous-page > a,
+.view-healthnews.layout-blog .pagination .next-page > a {
+	font-size: 0;
+}
+
+.view-healthnews.layout-blog .pagination .previous-page > span::before,
+.view-healthnews.layout-blog .pagination .previous-page > a::before {
+	content: "\f104";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #999999;
+	font-size: 18px;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #999999;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 1px;
+	margin-right: 20px;
+}
+
+.view-healthnews.layout-blog .pagination .next-page > span::before,
+.view-healthnews.layout-blog .pagination .next-page > a::before {
+	content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #999999;
+	font-size: 18px;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #999999;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 1px;
+	padding-left: 2px;
+	margin-left: 20px;
+}
+
+.view-healthnews.layout-blog .pagination .previous-page > span::before,
+.view-healthnews.layout-blog .pagination .next-page > span::before {
+	cursor: not-allowed;
+}
+
+.view-healthnews.layout-blog .pagination .page-counter {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	font-weight: 600;
+}
+
+.health-news-category-title {
+	font-size: 36px;
+	font-weight: normal;
+	color: #64887e;
+	line-height: 38px;
+	border-bottom: 1px solid #c4c4c4;
+	padding-bottom: 18px;
+	margin-bottom: 15px;
+}
+
+.health-news footer#t3-footer {
+	position: static !important;
+	width: auto !important;
+}
+
+.health-news .t3-footer > .container {
+	display: block !important;
+}
+
+.health-news .copyright {
+	background: #fff;
+	font-size: 14px;
+	padding: 12px 0;
+	text-align: center;
+}
+
+.health-news a#toggle-footer {
+    display: none !important;
+}
+
+.view-healthnews.layout-blog .joomla_add_this {
+	display: none !important;
+}
+
+.view-healthnews.layout-blog.health-news .t3-mainbody {
+	background: #f2f2f2;
+}
+
+.view-healthnews.layout-blog.health-news .items-row .item {
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.view-healthnews.layout-blog.health-news article {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.view-healthnews.layout-blog.health-news .article-intro {
+    line-height: 1.5;
+    position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 265px;
+	font-size: 14px;
+	color: #6f847d;
+}
+
+.view-healthnews.layout-blog.health-news article .intro-image-wrap {
+	margin: 0 15px 0 0;
+}
+
+.view-healthnews.layout-blog.health-news article .intro-image-wrap .item-image img {
+	padding: 0;
+}
+
+.view-healthnews.layout-blog.health-news h2.article-title {
+	font-size: 16px !important;
+	line-height: normal !important;
+	margin-bottom: 8px;
+}
+
+.view-healthnews.layout-blog.health-news .article-header a {
+	font-size: 18px;
+	font-weight: 500;
+	color: #63857d;
+}
+
+.article-info .create,
+.article-info .modified,
+.article-info .published {
+	padding: 0;
+	line-height: 1;
+	padding-bottom: 8px;
+	font-size: 13px;
+	color: #92a9a1;
+}
+
+.article-info .published {
+	background: none;
+	height: auto;
+	width: auto;
+	border-radius: 0;
+}
+
+.layout-blog .article-footer {
+	border-top: 0px none;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.layout-blog .article-footer .readmore > a.readmore-link {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #89c2b3;
+}
+
+.layout-blog .article-footer .readmore > a.readmore-link > span {
+	margin-top: 8px;
+	display: block;
+}
+
+.view-healthnews.layout-blog.health-news .article-bottom {
+	padding-left: 10px;
+}
+
+div.healthday-copyright {
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	background-image: url("/images/health_news/HEALTHDAY_Web_Small.jpg");
+	background-repeat: no-repeat;
+	background-position: center -10px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.t3-module.mod_search_healthnews {
+	background-color: #fff;
+	padding: 15px 10px 10px;
+}
+
+#t3-mainbody .mod_search_healthnews h3.module-title {
+	font-size: 18px !important;
+	text-transform: uppercase;
+	color: #8bbeb5;
+	font-weight: 700;
+}
+
+.mod_search_healthnews input#mod-search-searchword {
+	border: 0px none;
+	background-color: #F2F2F2;
+	width: 100%;
+}
+
+.mod_search_healthnews input#mod-search-searchword::-webkit-input-placeholder {
+		color: #666 !important;
+}
+
+.mod_search_healthnews input#mod-search-searchword::-moz-placeholder {
+	color: #666 !important;
+}
+
+.mod_search_healthnews input#mod-search-searchword:-ms-input-placeholder {
+	color: #666 !important;
+}
+
+.mod_search_healthnews input#mod-search-searchword:-moz-placeholder {
+	color: #666 !important;
+}
+
+.mod_search_healthnews form.form-inline {
+	position: relative;
+}
+
+.mod_search_healthnews input#mod-search-searchword + button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 34px;
+	border: 0 none;
+	background-image: url("/images/health_news/SearchHealthNewsBtn.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	background-color: transparent;
+}
+
+.mod_search_healthnews input#mod-search-searchword + button > img {
+	display: none;
+}
+
+#Mod181 {
+	background-color: #fff;
+	padding: 15px 10px;
+}
+
+#Mod181 .module-ct {
+	padding: 0 5px;
+}
+
+#Mod181 h3.module-title {
+	font-size: 24px !important;
+	margin-bottom: 15px !important;
+}
+
+.mod_featuredcategories > a {
+	color: #64857a;
+	float: left;
+	margin: 2px 0px;
+	clear: both;
+	width: 100%;
+	padding: 2px 7px;
+}
+
+.mod_featuredcategories > a.active {
+	background-color: #8dc0b7;
+	color: #fff;
+	font-weight: 600;
+}
+
+@media (max-width: 1279px) and (min-width: 940px) {
+	.view-healthnews.layout-blog.health-news .main-content-sidebar-left {
+		width: 100%;
+		padding-right: 10px;
+	}
+
+	.view-healthnews.layout-blog.health-news .main-content-sidebar-left #t3-content.col-md-8 {
+		width: 610px;
+		left: 320px;
+		padding: 10px;
+	}
+
+	.view-healthnews.layout-blog.health-news .t3-sidebar.t3-sidebar-1 {
+		right: 610px;
+		width: 320px;
+	}
+
+	.t3-mainnav .t3-navbar .navbar-nav > li > a {
+		font-size: 20px !important;
+		padding: 9px 26px !important;
+	}
+
+	.health-news .t3-sidebar-2 {
+		width: 320px;
+		float: none;
+		clear: both;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 939px) {
+	.view-healthnews.layout-blog.health-news .t3-content.col-xs-12 {
+		float: none;
+	}
+
+	.view-healthnews.layout-blog.health-news #t3-mainbody .t3-sidebar {
+		float: none;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	.view-healthnews.layout-blog.health-news #t3-mainbody {
+    	border-left: 10px solid #f2f2f2;
+	}
+
+	.article-info .create,
+	.article-info .modified,
+	.article-info .published {
+		position: static;
+	}
+
+	.view-healthnews.layout-blog .pagination {
+		float: none;
+	}
+
+	.view-healthnews.layout-blog.health-news .pagination-wrap {
+		margin-top: 20px;
+	}
+
+	.view-article.health-news .t3-content div[itemprop="articleBody"] {
+		clear: both;
+	}
+
+	.health-news .t3-sidebar {
+		width: 320px;
+		float: none;
+		margin: 0 auto;
+		clear: both;
+	}
+}
+
+@media (max-width: 767px) {
+	.view-healthnews.layout-blog.health-news article {
+		position: static;
+		float: none;
+	}
+
+	.view-healthnews.layout-blog.health-news .article-intro {
+		position: static;
+		transform: translateY(0);
+		float: left;
+		width: 60%;
+	}
+
+	.view-healthnews.layout-blog.health-news article .intro-image-wrap {
+		width: 35%;
+	}
+
+	.view-healthnews.layout-blog.health-news .article-header a {
+		font-size: 16px;
+	}
+	
+	.view-healthnews.layout-blog.health-news .article-intro > .article-aside {
+		height: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+	.view-healthnews.layout-blog.health-news .items-row .item {
+		margin-bottom: 30px;
+	}
+
+	.view-healthnews.layout-blog.health-news .article-intro {
+	    float: none;
+	    width: auto;
+	}
+
+	.health-news-category-title {
+		font-size: 28px;
+		font-weight: normal;
+		color: #64887e;
+		line-height: normal;
+		border-bottom: 1px solid #c4c4c4;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html.view-article.health-news .joomla_add_this .addthis_button_facebook span {
+    	background: url('../images/article-share/facebook-mob.png') no-repeat !important;
+    	width: 40px !important;
+    	height: 40px !important;
+	}
+	html.view-article.health-news .joomla_add_this .addthis_button_twitter span {
+		background: url('../images/article-share/twitter-mob.png') no-repeat !important;
+    	width: 40px !important;
+    	height: 40px !important;
+	}
+	html.view-article.health-news .joomla_add_this .at_PinItButton {
+		background: url('../images/article-share/pinterest-mob.png') no-repeat !important;
+    	width: 40px !important;
+    	height: 40px !important;
+	}
+	html.view-article.health-news .joomla_add_this .atc_s.addthis_button_compact {
+		background: url('../images/article-share/share-mob.png') no-repeat !important;
+    	width: 40px !important;
+    	height: 40px !important;
+	}
+}
+
 /* Masthead sharing icons */
 .t3-masthead .sharing-icons {
     width: auto;
@@ -300,94 +721,6 @@
 	display: none;
 }
 
-@media screen and (max-width: 1279px) {
-	.healthaz-label-heading .healthaz-adam-img,
-	.azalphabet-label-heading .azalphabet-adam-img {
-    	border-left: 0px none;
-		padding: 0px;
-		margin: 20px auto;
-		text-align: center;
-		max-width: 100%;
-    }
-    .healthaz-categories-all .healthaz-category img {
-    	width: 100%;
-    }
-    
-    .view-azalphabet .azalphabet-letters {
-    	margin-left: 0px;
-		margin-right: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-    }
-    .view-azalphabet span.azalphabet-letter {
-    	margin-bottom: 15px;
-    }
-    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
-    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
-    	border-bottom: 1px solid #e3e3e3;
-    }
-    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+2),
-    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+2) {
-		border-bottom: none !important;
-	}
-}
-
-@media all and (max-width: 1279px) and (min-width: 939px) {
-    .healthaz-categories-all {
-    	padding-right: 10px;
-		float: none;
-    }
-    .healthaz-categories-all .healthaz-category {
-    	max-width: none;
-    	float: none;
-    }
-}
-
-@media all and (max-width: 939px) {
-	.view-healthaz .t3-content.col-xs-12.col-sm-8.col-md-9 {
-		padding-right: 10px;
-	}
-	.healthaz-categories-all .healthaz-category {
-		max-width: 48.49%;
-	}
-	.healthaz-categories-all :nth-child(even):not(:first-child) {
-		clear: both;
-	}
-	.view-healthaz .article-bottom {
-		float: left;
-	}
-	.view-healthaz .t3-sidebar-right,
-	.view-azalphabet .t3-sidebar-right {
-		margin: 0px auto;
-		float: none;
-		clear: both;
-	}
-}
-
-@media all and (max-width: 691px) {
-	.healthaz-categories-all {
-		padding-right: 10px;
-	}
-	.healthaz-categories-all .healthaz-category {
-		max-width: none;
-	}
-}
-
-@media screen and (max-width: 560px) {
-	.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article {
-		margin-right: auto;
-		max-width: 320px;
-	}
-	.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
-    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
-    	border-bottom: 1px solid #e3e3e3 !important;
-    }
-    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:last-child,
-    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:last-child {
-    	border-bottom: none !important;
-    }
-}
-
 /* Custom CSS by Dunya  */
 
 @media screen and (max-width: 1279px) {
@@ -622,7 +955,7 @@ nav .t3-mainnav .t3-navbar .navbar-nav > li > a {
 }
 
 .scroller-wrap .basic_h .items .pane {
-	width: 2470px !important;
+	width: 190px !important;
 }
 
 .ja-masonry-wrap {
@@ -1297,6 +1630,35 @@ a#toggle-footer {
 	    margin-right: 0px;
 	    padding-right: 0px;
 	}
+	.healthaz-label-heading .healthaz-adam-img,
+	.azalphabet-label-heading .azalphabet-adam-img {
+    	border-left: 0px none;
+		padding: 0px;
+		margin: 20px auto;
+		text-align: center;
+		max-width: 100%;
+    }
+    .healthaz-categories-all .healthaz-category img {
+    	width: 100%;
+    }
+    
+    .view-azalphabet .azalphabet-letters {
+    	margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+    }
+    .view-azalphabet span.azalphabet-letter {
+    	margin-bottom: 15px;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
+    	border-bottom: 1px solid #e3e3e3;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+2),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+2) {
+		border-bottom: none !important;
+	}
 }
 /* Dunya's code */
 @media all and (max-width: 1279px) and (min-width: 939px) {
@@ -1310,6 +1672,44 @@ a#toggle-footer {
         max-width: 600px;
         padding-right: 10px;   	
     }
+    .healthaz-categories-all {
+    	padding-right: 10px;
+		float: none;
+    }
+    .healthaz-categories-all .healthaz-category {
+    	max-width: none;
+    	float: none;
+    }
+}
+
+@media all and (max-width: 939px) {
+	.view-healthaz .t3-content.col-xs-12.col-sm-8.col-md-9 {
+		padding-right: 10px;
+	}
+	.healthaz-categories-all .healthaz-category {
+		max-width: 48.49%;
+	}
+	.healthaz-categories-all :nth-child(even):not(:first-child) {
+		clear: both;
+	}
+	.view-healthaz .article-bottom {
+		float: left;
+	}
+	.view-healthaz .t3-sidebar-right,
+	.view-azalphabet .t3-sidebar-right {
+		margin: 0px auto;
+		float: none;
+		clear: both;
+	}
+}
+
+@media all and (max-width: 691px) {
+	.healthaz-categories-all {
+		padding-right: 10px;
+	}
+	.healthaz-categories-all .healthaz-category {
+		max-width: none;
+	}
 }
 
 @media screen and (max-width: 655px) {
@@ -1322,6 +1722,21 @@ a#toggle-footer {
         width: 100% !important;
         max-width: 600px;
         padding-right: 10px;   	
+    }
+}
+
+@media screen and (max-width: 560px) {
+	.view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article {
+		margin-right: auto;
+		max-width: 320px;
+	}
+	.view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:nth-last-child(-n+3),
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:nth-last-child(-n+3) {
+    	border-bottom: 1px solid #e3e3e3 !important;
+    }
+    .view-azalphabet .azalphabet-letter-result .azalphabet-lr-article:last-child,
+    .view-azalphabet .azalphabet-most-viewed .azalphabet-mw-article:last-child {
+    	border-bottom: none !important;
     }
 }
 
@@ -1747,7 +2162,6 @@ a#toggle-footer {
 .view-recipe #t3-content, .view-article #t3-content { margin-bottom: 10px!important;}
 /* //////////// YOORECIPE CSS */
 
-/* Responsive view fix */
 @media (max-width: 1279px) {
 	nav#t3-mainnav > .navbar-default.t3-mainnav.container > .t3-navbar {
 		max-width: 939px;
@@ -1808,7 +2222,6 @@ a#toggle-footer {
 	    overflow: visible !important;
   	}
 }
-
 @media (max-width: 470px) {
  	.logo-img {max-width: 220px;}
  	#t3-header .logo {

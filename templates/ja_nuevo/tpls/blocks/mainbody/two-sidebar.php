@@ -20,7 +20,7 @@ defined('_JEXEC') or die;
 
 <div id="t3-mainbody" class="container t3-mainbody">
 	<div class="row">
-		<?php if(JRequest::getVar( 'view' ) !== 'article' && JFactory::getApplication()->input->get('option', '', 'STRING') !== 'com_yoorecipe'): ?>
+		<?php if(JRequest::getVar( 'view' ) !== 'article' && JRequest::getVar( 'layout' ) !== 'blog' && JFactory::getApplication()->input->get('option', '', 'STRING') !== 'com_yoorecipe'): ?>
 		<!-- MAIN CONTENT -->
 		<div id="t3-content" class="t3-content col-xs-12">
 

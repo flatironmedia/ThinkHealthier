@@ -44,13 +44,13 @@ $document->addStyleSheet(JUri::root() . 'media/com_newsletter/css/form.css');
 </script>
 
 <script type="text/javascript">
-	function jSelectArticle(id, title, catid, fieldName, fieldID, lang){
-		document.getElementById(fieldName).value = title;
-		document.getElementById(fieldID).value = id;
-		if (fieldName = 'jform_featured_article_name') document.getElementById('jform_subject').value = document.getElementById('jform_featured_article_name').value;
+	function jSelectArticle(id, title, catid, fieldName, fieldID, lang)
+			{
+				document.getElementById(fieldName).value = title;
+				document.getElementById(fieldID).value = id;
+				jModalClose();
+			}
 
-		jModalClose();
-	}
 </script>
 
 <form
@@ -87,10 +87,8 @@ $document->addStyleSheet(JUri::root() . 'media/com_newsletter/css/form.css');
 					<div class="controls"><?php echo $this->form->getInput('date'); ?></div>
 				</div>
 				<div class="control-group">
-					<div class="control-label" ><?php echo $this->form->getLabel('subject'); ?></div>
-					<div class="controls">
-						<?php echo $this->form->getInput('subject'); ?>
-					</div>
+					<div class="control-label"><?php echo $this->form->getLabel('subject'); ?></div>
+					<div class="controls"><?php echo $this->form->getInput('subject'); ?></div>
 				</div>				
 				<br />
 				<br />
@@ -99,48 +97,46 @@ $document->addStyleSheet(JUri::root() . 'media/com_newsletter/css/form.css');
 					<div class="controls">
 						<?php echo $this->form->getInput('featured_article_name'); ?>
 
-						<!-- <a class="modal" href="index.php?option=com_newsletter&view=newsletter&layout=articles&id=<?php echo $this->item->id; ?>&tmpl=component" rel="{handler: 'iframe', size: {x: 600, y: 550}}">open form</a> -->
-
-						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter&tmpl=component&field_name=jform_featured_article_name&field_id=jform_ftrdArticleID" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
-						<!-- <a class="btn modal-button" title="Alt Data" href="index.php?option=com_newsletter&view=newsletter&layout=edit&id=1" rel="{handler: 'iframe', size: {x: 600, y: 550}}"><span class="icon-file-add"></span>Alt Data</a> -->
+						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter2&tmpl=component&field_name=jform_featured_article_name&field_id=jform_featured_article" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
+					
 					</div>
-					<div class="control-label"><?php echo $this->form->getLabel('ftrdArticleID'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('ftrdArticleID'); ?></div>
+					<div class="control-label"><?php echo $this->form->getLabel('featured_article'); ?></div>
+					<div class="controls"><?php echo $this->form->getInput('featured_article'); ?></div>
 				</div>
 				<div class="control-group">
 					<div class="control-label"><?php echo $this->form->getLabel('featured_recipe_name'); ?></div>
 					<div class="controls"><?php echo $this->form->getInput('featured_recipe_name'); ?>
-						<a class="modal" href="index.php?option=com_yoorecipe&view=yoorecipes&layout=modal_newsletter&tmpl=component&field_name=jform_featured_recipe_name&field_id=jform_ftrdRecipeID" rel="{handler: 'iframe', size: {x: 1200, y: 550}}">Select recipe</a>
+						<a class="modal" href="index.php?option=com_yoorecipe&view=yoorecipes&layout=modal_newsletter&tmpl=component&field_name=jform_featured_recipe_name&field_id=jform_featured_recipe" rel="{handler: 'iframe', size: {x: 1200, y: 550}}">Select recipe</a>
 					</div>
 					<div class="control-label"><?php echo $this->form->getLabel('featured_recipe'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('ftrdRecipeID'); ?></div>
+					<div class="controls"><?php echo $this->form->getInput('featured_recipe'); ?></div>
 				</div>
 				<br />
 				<br />
 				<div class="control-group">
 					<div class="control-label"><?php echo $this->form->getLabel('article2_name'); ?></div>
 					<div class="controls"><?php echo $this->form->getInput('article2_name'); ?>
-						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter&tmpl=component&field_name=jform_article2_name&field_id=jform_article1ID" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
+						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter2&tmpl=component&field_name=jform_article2_name&field_id=jform_article2" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
 					</div>
 					<div class="control-label"><?php echo $this->form->getLabel('article2'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('article1ID'); ?>
+					<div class="controls"><?php echo $this->form->getInput('article2'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label"><?php echo $this->form->getLabel('article3_name'); ?></div>
 					<div class="controls"><?php echo $this->form->getInput('article3_name'); ?>
-						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter&tmpl=component&field_name=jform_article3_name&field_id=jform_article2ID" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
+						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter2&tmpl=component&field_name=jform_article3_name&field_id=jform_article3" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
 					</div>
 					<div class="control-label"><?php echo $this->form->getLabel('article3'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('article2ID'); ?></div>
+					<div class="controls"><?php echo $this->form->getInput('article3'); ?></div>
 				</div>
 				<div class="control-group">
 					<div class="control-label"><?php echo $this->form->getLabel('article4_name'); ?></div>
 					<div class="controls"><?php echo $this->form->getInput('article4_name'); ?>
-						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter&tmpl=component&field_name=jform_article4_name&field_id=jform_article3ID" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
+						<a class="modal" href="index.php?option=com_content&view=articles&layout=modal_newsletter2&tmpl=component&field_name=jform_article4_name&field_id=jform_article4" rel="{handler: 'iframe', size: {x: 800, y: 550}}">Select article</a>
 					</div>
 					<div class="control-label"><?php echo $this->form->getLabel('article4'); ?></div>
-					<div class="controls"><?php echo $this->form->getInput('article3ID'); ?></div>
+					<div class="controls"><?php echo $this->form->getInput('article4'); ?></div>
 				</div>
 			</fieldset>
 		</div>

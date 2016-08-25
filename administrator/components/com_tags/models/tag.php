@@ -261,6 +261,7 @@ class TagsModelTag extends JModelAdmin
 	 */
 	public function save($data)
 	{
+		
 		$dispatcher = JEventDispatcher::getInstance();
 		$table      = $this->getTable();
 		$input      = JFactory::getApplication()->input;
@@ -372,6 +373,7 @@ class TagsModelTag extends JModelAdmin
 		$this->cleanCache();
 
 		return true;
+		
 	}
 
 	/**

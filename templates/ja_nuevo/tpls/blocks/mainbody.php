@@ -39,6 +39,10 @@ elseif(JFactory::getApplication()->input->get('option', '', 'STRING') == 'com_co
 	$sidebar1 = false;
 	$sidebar2 = 'sidebar-2';
 }
+elseif(JFactory::getApplication()->input->get('option', '', 'STRING') == 'com_content' && JFactory::getApplication()->input->get('view', '', 'STRING') == 'category' && JFactory::getApplication()->input->get('layout', '', 'STRING') == 'blog'){
+	$sidebar1 = 'sidebar-1';
+	$sidebar2 = 'sidebar-2';
+}
 
 // detect layout
 if ($sidebar1 && $sidebar2) {
@@ -50,3 +54,5 @@ if ($sidebar1 && $sidebar2) {
 } else {
 	$this->loadBlock('mainbody/no-sidebar');
 }
+
+
