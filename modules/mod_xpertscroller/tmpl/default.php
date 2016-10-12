@@ -12,11 +12,38 @@
 defined('_JEXEC') or die('Restricted accessd');
 $index=0;
 
-//$vars = get_defined_vars();
-//echo('<pre>'.print_r(array_keys($vars), true).'</pre>');
-//echo('<pre>'.print_r($_SERVER[REQUEST_URI], true).'</pre>');
-//echo('<pre>'.print_r($_GET, true).'</pre>');
-//die('<pre>'.print_r($items, true).'</pre>');
+
+echo "<script>
+jQuery('#item-list').ready( function() {
+    //alert( jQuery(window).width() );
+    if (jQuery(window).width() > ".(190*count($items)).") {
+        jQuery('#item-list').css({margin: '0 auto', position: 'static', width:'".(190*count($items))."px'});
+        jQuery('#scroller-nav').hide();
+    }
+    else {
+        jQuery('#item-list').css({margin: '0 auto', position: 'absolute', width:'".(190*count($items))."px'});
+        jQuery('#scroller-nav').show();
+    }
+});
+
+</script>";
+
+
+echo "<script>
+window.onresize = function(event) {
+    //alert( jQuery('#item-list').css('right') );
+    if (jQuery(window).width() > ".(190*count($items)).") {
+        jQuery('#item-list').css({margin: '0 auto', position: 'static', width:'".(190*count($items))."px'});
+        jQuery('#scroller-nav').hide();
+    }
+    else {
+        jQuery('#item-list').css({margin: '0 auto', position: 'absolute', width:'".(190*count($items))."px'});
+        jQuery('#scroller-nav').show();
+    }
+};
+
+</script>";
+
 ?>
 <!--ThemeXpert: XpertScroller module version 3.10-1-GFF3CA2D Start here
 
@@ -38,7 +65,7 @@ style="width:<?php echo 190*count($items) ?>px;"
 
     <div id="<?php echo $module_id;?>" class="scroller">
 
-        <div class="items" <?php if (count($items)<10) echo 'style="margin: 0 auto; position: static; width:'.(190*count($items)).'px"'; ?> >
+        <div class="items" id="item-list" <?php echo 'style="margin: 0 auto; position: static; width:'.(190*count($items)).'px"'; ?> >
         <?php for($i = 0; $i<$totalPane; $i++){?>
             <div class="pane">
             <?php for($col=0; $col<(int)$params->get('col_amount'); $col++, $index++) {?>
@@ -53,7 +80,10 @@ style="width:<?php echo 190*count($items) ?>px;"
                             <?php endif; ?>
 
                                 <?php 
-                                    if (! isset($items[$index]->image)) $items[$index]->image = "/images/default_image.jpg";
+                                    // audovicic@ogosense.com: getting image and setting default if there is no one
+                                    if (! isset($items[$index]->image)) $items[$index]->image = $instance->getImage($items[$index]);
+                                    if (! isset($items[$index]->image)) if (empty($items[$index])) $items[$index]->image = "/images/default_image.jpg";
+
                                 ?>
                                 <img class="<?php echo $params->get('image_position');?>" src="<?php echo $items[$index]->image?>" alt="<?php echo $items[$index]->title?>" />
                             <?php if( $params->get('image_link') ) :?>
@@ -109,7 +139,7 @@ style="width:<?php echo 190*count($items) ?>px;"
         <?php }?>
         </div>
     </div>
-    <div class="scroller-nav">
+    <div class="scroller-nav" id="scroller-nav" style="display:none;">
     <a class="prev browse left" <?php echo ($params->get('control','1')) ? '' : 'style="display:none;"';?> ></a>
     <br />
     <a class="next browse left" <?php echo ($params->get('control','1')) ? '' : 'style="display:none;"';?> ></a>

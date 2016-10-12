@@ -1,5 +1,29 @@
 <?php 
 
+function processExtraText($myStr, $period = false) { // replace new lines and multiple <br />'s with a single <br />
+	$myStr = nl2br($myStr, true);
+	$myStr = str_replace("<br>", "<br />", $myStr);
+	$myStr = str_replace("<br/>", "<br />", $myStr);
+	if ($period) {
+		$myStr = str_replace(".", ".<br />", $myStr);
+	}
+	$myStr = str_replace("\n", "", $myStr);
+	$myStr = str_replace("\t", "", $myStr);
+	$myStr = str_replace("\r", "", $myStr);
+	$myStr = str_replace("\r\n", "", $myStr);
+	for ($i=0; $i < 10; $i++) {
+		$myStr = str_replace("<br /><br />", "<br />", $myStr);
+		$myStr = str_replace("<br /> <br />", "<br />", $myStr);
+	}
+	$myStr = str_replace("<br />\n", "", $myStr);
+	$myStr = str_replace("<br />\t", "", $myStr);
+	$myStr = str_replace("<br />\r", "", $myStr);
+	$myStr = str_replace("<br />\r\n", "", $myStr);
+	$myStr = preg_replace('/\<br \/\>$/', '', $myStr);
+	$myStr = preg_replace('/^\<br \/\>/', '', $myStr);
+	return $myStr;
+}
+
 include_once("class.DateConvert.php");
 
 function whichImage($img,$type,$ext) {
