@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * @package XpertScroller
  * @version 3.10-1-GFF3CA2D
  * @author ThemeXpert http://www.themexpert.com
